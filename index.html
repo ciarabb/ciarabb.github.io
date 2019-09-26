@@ -13,7 +13,6 @@
         top: 25%;
         animation-duration: 3s;
         animation-iteration-count: 1;
-
     }
 
     #box2 {
@@ -75,16 +74,16 @@
         left: 75%;
         top: 50%;
         animation-duration: 3s;
-        animation-iteration-count: 3;
+        animation-iteration-count: 2;
     }
 
     #box7 {
         width: 100px;
         height: 100px;
         background-color: royalblue;
-        transition: 2s;
+        transition: 1s;
         position: absolute;
-        animation-duration: 3s;
+        animation-duration: 1s;
         left: 25%;
         top: 75%;
     }
@@ -426,7 +425,7 @@
         box1.style.animationName = "rotate";
 
         
-        setTimeout(function(){box1.style.animationName=""}, 3000)
+        setTimeout(function(){box1.style.animationName=""}, 1000)
 
         console.log(box1.style);
 
@@ -437,6 +436,8 @@
 
     box2.addEventListener("click", function() {
         box2.style.animationName = "grow-shrink"
+
+        setTimeout(function(){box2.style.animationName=""}, 1000)
 
         console.log(box2.style);
 
@@ -450,6 +451,8 @@
     box3.addEventListener("click", function() {
         box3.style.animationName = "bounce-up"
 
+        setTimeout(function(){box3.style.animationName=""}, 1000)
+
         console.log(box3.style);
 
     })
@@ -461,6 +464,8 @@
     box4.addEventListener("click", function() {
         box4.style.animationName = "pulse-shrink"
 
+    setTimeout(function(){box4.style.animationName=""}, 1000)
+
         console.log(box4.style);
 
     })
@@ -471,6 +476,8 @@
 
     box5.addEventListener("click", function() {
         box5.style.animationName = "wiggle"
+
+    setTimeout(function(){box5.style.animationName=""}, 1000)
 
         console.log(box5.style);
 
@@ -484,6 +491,8 @@
     box6.addEventListener("click", function() {
         box6.style.animationName = "wobble-diagonal"
 
+    setTimeout(function(){box6.style.animationName=""}, 3000)
+
         console.log(box6.style);
 
     })
@@ -495,6 +504,8 @@
 
     box7.addEventListener("click", function() {
         box7.style.animationName = "grow"
+
+    setTimeout(function(){box7.style.animationName=""}, 1000)
 
         console.log(box7.style);
 
@@ -508,6 +519,8 @@
     box8.addEventListener("click", function() {
         box8.style.animationName = "buzz"
 
+    setTimeout(function(){box8.style.animationName=""}, 1000)
+
         console.log(box8.style);
 
     })
@@ -519,6 +532,8 @@
 
     box9.addEventListener("click", function() {
         box9.style.animationName = "circle-rotate"
+
+    setTimeout(function(){box9.style.animationName=""}, 1000)
 
         console.log(box9.style);
 
