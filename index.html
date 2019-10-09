@@ -2,548 +2,119 @@
 <html>
 
 <head>
-    <style type="text/css">
-    #box1 {
-        width: 100px;
-        height: 100px;
-        background-color: lightskyblue;
-        transition: 2s;
+    <style>
+    a:link {
+        text-decoration: none;
+    }
+
+    h1 {
+        color: coral;
+        font-size: 45px;
+        text-align: center;
+    }
+
+
+    h2 {
+        color: lightcoral;
+        font-size: 30px;
+        text-indent: 50px;
+        position: relative;
+        bottom: 12%;
+    }
+
+    h3 {
+        color: lightcoral;
+        font-size: 30px;
+        text-align: right;
+        position: relative;
+        right: 5%;
+        font-weight: bold;
+    }
+
+    h4 {
+        color: cornflowerblue;
+        font-size: 20px;
+    }
+
+    
+
+    p {
+        color: cornflowerblue;
+        font-size: 15px;
+        width: 60%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+
+    section {
+        width: 100%;
+        height: 100%;
         position: absolute;
-        left: 25%;
-        top: 25%;
-        animation-duration: 3s;
-        animation-iteration-count: 1;
     }
 
-    #box2 {
-        width: 100px;
-        height: 100px;
-        background-color: lightpink;
-        transition: 2s;
+    #clickboxgif {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        left: 39%;
+        top: 30%;
+    }
+
+    #one {
+        background-color: powderblue;
+        top: 0%;
+    }
+
+    #two {
+        top: 100%;
+        background-color: lavenderblush;
+
+    }
+
+    #three {
+        background-color: honeydew;
+        top: 200%;
+    }
+
+    #four {
+        background-color: lemonchiffon;
+        top: 300%;
+    }
+
+    #boxclick {
         position: absolute;
-        left: 50%;
-        top: 25%;
-        animation-duration: 3s;
-        animation-iteration-count: 1;
-    }
-
-    #box3 {
-        width: 100px;
-        height: 100px;
-        background-color: mediumspringgreen;
-        transition: 2s;
-        position: absolute;
-        left: 75%;
-        top: 25%;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-    }
-
-    #box4 {
-        width: 100px;
-        height: 100px;
-        background-color: seagreen;
-        transition: 2s;
-        position: absolute;
-        left: 25%;
-        top: 50%;
-        transition-duration: .1s;
-        animation-duration: 1.5s;
-        animation-iteration-count: 1;
-    }
-
-    #box5 {
-        width: 100px;
-        height: 100px;
-        background-color: plum;
-        transition: 2s;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        animation-duration: 1.5s;
-        animation-iteration-count: 1;
-    }
-
-
-    #box6 {
-        width: 100px;
-        height: 100px;
-        background-color: salmon;
-        transition: 2s;
-        position: absolute;
-        left: 75%;
-        top: 50%;
-        animation-duration: 3s;
-        animation-iteration-count: 2;
-    }
-
-    #box7 {
-        width: 100px;
-        height: 100px;
-        background-color: royalblue;
-        transition: 1s;
-        position: absolute;
-        animation-duration: 1s;
-        left: 25%;
-        top: 75%;
-    }
-
-    #box8 {
-        width: 100px;
-        height: 100px;
-        background-color: orange;
-        transition: 2s;
-        position: absolute;
-        left: 50%;
-        top: 75%;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-
-    }
-
-    #box9 {
-        width: 100px;
-        height: 100px;
-        background-color: palevioletred;
-        position: absolute;
-        left: 75%;
-        top: 75%;
-        animation-duration: 3s;
-        animation-iteration-count: 1;
-    }
-
-    /*box 1*/
-
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(9000deg);
-        }
-    }
-
-    /*box 2*/
-
-    @keyframes grow-shrink {
-
-        0% {
-            left: 51%;
-            top: 26%;
-            width: 100px;
-            height: 100px;
-        }
-
-        20% {
-            left: 52%;
-            top: 27%;
-            width: 50px;
-            height: 50px;
-        }
-
-        40% {
-            left: 51%;
-            top: 26%;
-            width: 100px;
-            height: 100px;
-        }
-
-        60% {
-            left: 52%;
-            top: 27%;
-            width: 50px;
-            height: 50px;
-        }
-
-        80% {
-            left: 51%;
-            top: 26%;
-            width: 100px;
-            height: 100px;
-        }
-
-        100% {
-            left: 52%;
-            top: 27%;
-            width: 50px;
-            height: 50px;
-        }
-    }
-
-    /*box 3*/
-
-    @keyframes bounce-up {
-
-        0% {
-            top: 5%;
-        }
-
-        20% {
-            top: 25%;
-        }
-
-        40% {
-            top: 5%;
-        }
-
-        60% {
-            top: 25%;
-        }
-
-        80% {
-            top: 5%;
-        }
-
-        100% {
-            top: 25%;
-        }
-    }
-
-    /*box 4*/
-    @keyframes pulse-shrink {
-
-        0% {
-            border-radius: 70%;
-            width: 100px;
-            height: 100px;
-        }
-
-        20% {
-            width: 80px;
-            height: 80px;
-        }
-
-        40% {
-            width: 100px;
-            height: 100px;
-        }
-
-        60% {
-            width: 80px;
-            height: 80px;
-        }
-
-        80% {
-            width: 100px;
-            height: 100px;
-        }
-
-        100% {
-            width: 80px;
-            height: 80px;
-        }
-
-    }
-
-
-    /*box 5*/
-    @keyframes wiggle {
-        0% {
-            left: 55%;
-        }
-
-        20% {
-            left: 45%;
-        }
-
-        40% {
-            left: 52%;
-        }
-
-        60% {
-            left: 48%;
-        }
-
-        80% {
-            left: 51%;
-        }
-
-        100% {
-            left: 49%;
-        }
-    }
-
-    /*box 6*/
-    @keyframes wobble-diagonal {
-        0% {
-            top: 46%;
-            left: 79%;
-        }
-
-        10% {
-            top: 50%;
-            left: 75%;
-        }
-
-        15% {
-            top: 48%;
-            left: 77%;
-        }
-
-        20% {
-            top: 50%;
-            left: 75%;
-        }
-
-
-
-        30% {
-            top: 46%;
-            left: 71%;
-        }
-
-        40% {
-            top: 50%;
-            left: 75%;
-        }
-
-        45% {
-            top: 48%;
-            left: 73%;
-        }
-
-        50% {
-            top: 50%;
-            left: 75%;
-        }
-
-
-
-        60% {
-            top: 54%;
-            left: 71%
-        }
-
-        70% {
-            top: 50%;
-            left: 75%;
-        }
-
-        75% {
-            top: 52%;
-            left: 73%
-        }
-
-        80% {
-            top: 50%;
-            left: 75%;
-        }
-
-
-
-        90% {
-            top: 54%;
-            left: 79%
-        }
-
-        95% {
-            top: 50%;
-            left: 75%;
-        }
-
-        100% {
-            top: 52%;
-            left: 77%
-        }
-
-    }
-
-    /*box 7*/
-    @keyframes grow {
-        from {
-            width:100px;
-            height:100px;
-        }
-
-        to {
-            width:150px;
-            height:150px;
-        }
-    }
-
-    /*box 8*/
-    @keyframes buzz {
-        0% {
-            top: 77%;
-        }
-
-        20% {
-            top: 73%;
-        }
-
-        40% {
-            top: 74%;
-        }
-
-        60% {
-            top: 76%;
-        }
-
-        80% {
-            top: 74.5%;
-        }
-
-        100% {
-            top: 76.5%;
-        }
-    }
-
-
-    /*box 9*/
-
-    @keyframes circle-rotate {
-        from {
-            border-radius: 50%;
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(9000deg);
-        }
+        left: 39%;
+        top: 480px;
+        width: 600px;
     }
     </style>
 </head>
 
 <body>
-    <div id="box1"></div>
-    <div id="box2"></div>
-    <div id="box3"></div>
-    <div id="box4"></div>
-    <div id="box5"></div>
-    <div id="box6"></div>
-    <div id="box7">
-    </div>
-    <div id="box8"></div>
-    <div id="box9"></div>
-    <script>
-    //THIS IS THE CODE FOR ONE BOX//
-
-    var box1 = document.getElementById('box1');
-
-    box1.addEventListener("click", function() {
-        box1.style.animationName = "rotate";
-
-        
-        setTimeout(function(){box1.style.animationName=""}, 1000)
-
-        console.log(box1.style);
-
-    })
-
-    ///////////////////////
-    var box2 = document.getElementById('box2');
-
-    box2.addEventListener("click", function() {
-        box2.style.animationName = "grow-shrink"
-
-        setTimeout(function(){box2.style.animationName=""}, 1000)
-
-        console.log(box2.style);
-
-    })
-
-
-
-    ///////////////////////
-    var box3 = document.getElementById('box3');
-
-    box3.addEventListener("click", function() {
-        box3.style.animationName = "bounce-up"
-
-        setTimeout(function(){box3.style.animationName=""}, 1000)
-
-        console.log(box3.style);
-
-    })
-
-    ////////
-
-    var box4 = document.getElementById('box4');
-
-    box4.addEventListener("click", function() {
-        box4.style.animationName = "pulse-shrink"
-
-    setTimeout(function(){box4.style.animationName=""}, 1000)
-
-        console.log(box4.style);
-
-    })
-
-    ////////
-
-    var box5 = document.getElementById('box5');
-
-    box5.addEventListener("click", function() {
-        box5.style.animationName = "wiggle"
-
-    setTimeout(function(){box5.style.animationName=""}, 1000)
-
-        console.log(box5.style);
-
-    })
-
-    ////////
-
-
-    var box6 = document.getElementById('box6');
-
-    box6.addEventListener("click", function() {
-        box6.style.animationName = "wobble-diagonal"
-
-    setTimeout(function(){box6.style.animationName=""}, 3000)
-
-        console.log(box6.style);
-
-    })
-
-    ////////
-
-
-    var box7 = document.getElementById('box7');
-
-    box7.addEventListener("click", function() {
-        box7.style.animationName = "grow"
-
-    setTimeout(function(){box7.style.animationName=""}, 1000)
-
-        console.log(box7.style);
-
-    })
-
-    ////////
-
-
-    var box8 = document.getElementById('box8');
-
-    box8.addEventListener("click", function() {
-        box8.style.animationName = "buzz"
-
-    setTimeout(function(){box8.style.animationName=""}, 1000)
-
-        console.log(box8.style);
-
-    })
-
-    ////////
-
-
-    var box9 = document.getElementById('box9');
-
-    box9.addEventListener("click", function() {
-        box9.style.animationName = "circle-rotate"
-
-    setTimeout(function(){box9.style.animationName=""}, 1000)
-
-        console.log(box9.style);
-
-    })
-
-
-
-
-    /////////////////////////////
-    </script>
+    <section id="one">
+        <h1>
+            CIARA
+        </h1>
+        <a href="journal.html">
+            <h3>JOURNAL</h3>
+        </a>
+        <h2> PROJECTS </h2>
+        <img src="ciarabgif.gif" id="clickboxgif">
+        <div id="boxclick">
+            <a href="clickbox.html">
+                <h4>Box Click</h4>
+            </a>
+            <p> This is my first website diddy. It has nine boxes that move when they are clicked. I liked animating their motions and finding colors in CSS that I like. My favorite box is the middle row right red box. </p>
+        </div>
+    </section>
+    <section id="two"></section>
+    <section id="three"></section>
+    <section id="four"></section>
+    <br>
+    <br>
 </body>
 
 </html>
