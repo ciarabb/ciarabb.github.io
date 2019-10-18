@@ -3,7 +3,7 @@
 
 <head>
     <style>
-    a:link {
+        a:link {
         text-decoration: none;
     }
 
@@ -16,19 +16,18 @@
 
     h2 {
         color: lightcoral;
-        font-size: 30px;
+        font-size: 20px;
         text-indent: 50px;
         position: relative;
-        bottom: 12%;
     }
 
     h3 {
         color: lightcoral;
-        font-size: 30px;
-        text-align: right;
+        font-size: 20px;
+        text-indent: 50px;
         position: relative;
-        right: 5%;
         font-weight: bold;
+        top:100px;
     }
 
     h4 {
@@ -60,11 +59,11 @@
         height: 200px;
         position: relative;
         left: 39%;
-        top: 30%;
+        top: 25%;
     }
 
     #one {
-        background-color: powderblue;
+        background-color: white;
         top: 0%;
     }
 
@@ -87,30 +86,81 @@
     #boxclick {
         position: absolute;
         left: 39%;
-        top: 480px;
+        top: 400px;
         width: 600px;
     }
+
+    #ciaraportfolio {
+        position:  absolute;
+        left: 29%;
+        top: 100px;
+        width: 600px;
+    }
+
+    #spaceimage {
+        position:relative;
+        left:29%;
+        top:130px;
+        width:600px;
+        background-size:contain;
+    }
+
+    #journal {
+       }
+
+
+
+#project {
+    left:200px;
+
+    }
+
+    .links{
+    display: inline-block;
+    width: 120px;
+    height:50px;
+    top:10px;
+    font-weight: bold;
+    font-size: 25px;
+    border-color: white;
+    color: lightcoral;
+    position: absolute;
+
+    }
+
+
+#menu{
+   width:400px;
+    height:100%;
+    position: absolute;
+}
     </style>
+}
 </head>
 
 <body>
     <section id="one">
-        <h1>
-            CIARA
-        </h1>
-        <a href="journal.html">
-            <h3>JOURNAL</h3>
-        </a>
-        <h2> PROJECTS </h2>
+        <img src="ciaraportfolio.png" id="ciaraportfolio">
+
+        <div id="menu"><a href="#two"><div 
+            class="links" id="project">PROJECTS</div></a>
+        <a href="journal.html"><div class="links" id="journal">JOURNAL</div></a>
+
+
+    </div>
+
+
+        <img src="spaceimage.png" id="spaceimage" />
+    </section>
+    <section id="two">
         <img src="ciarabgif.gif" id="clickboxgif">
         <div id="boxclick">
             <a href="clickbox.html">
                 <h4>Box Click</h4>
             </a>
-            <p> This is my first website diddy. It has nine boxes that move when they are clicked. I liked animating their motions and finding colors in CSS that I like. My favorite box is the middle row right red box. </p>
+            <p> This is my first website diddy. It has nine boxes that move when they are clicked. I liked animating their motions and finding colors that I like. My favorite box is the red box in the middle row. </p>
         </div>
     </section>
-    <section id="two"></section>
     <section id="three"></section>
     <section id="four"></section>
     <br>
