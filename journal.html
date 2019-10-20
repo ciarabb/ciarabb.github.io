@@ -3,42 +3,111 @@
 
 <head>
     <style>
-
     body {
-    	background: black;
+        background: white;
+        margin-left: 10px;
     }
     h1 {
-        font:tamoha;
-        color:white;
-        text-align: center;
+        position: absolute;
+        left:36%;
+        top: 100px;
+        width: 400px;
+        font-family: Fira mono, sans-serif;
+        color: #2f5ea8;
+        font-size:45px;
     }
 
     h2 {
-        font:tamoha;
-        color:#39FF14;
-        position:relative;
-        left: 5%;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        color: black;
+        position: relative;
+        width: 50%;
+        text-align:center;
     }
 
     p {
-    	color:white;
-        font:tamoha;
+        color: black;
+        font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
         position: relative;
-        width: 40%;
-        left: 5%;
+        left:10%;
+        width: 50%;
+        text-align: left;
+        font-size:20px;
+    }
+
+    section {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+
+    #header {
+        background-color: white;
+        top: 0%;
+    }
+
+
+
+    .links {
+        display: inline-block;
+        width: 120px;
+        height: 50px;
+        top: 10px;
+        font-weight: bold;
+        font-size: 25px;
+        border-color: white;
+        color: lightcoral;
+        position: absolute;
+
+    }
+
+    #menu {
+        width: 400px;
+        height: 100%;
+        position: absolute;
+    }
+
+    #journal {}
+
+
+
+    #project {
+        left: 150px;
+
+    }
+
+
+    #text {
+        background-color: white;
+        top: 60%;
     }
     </style>
 </head>
 
 <body>
-    <h1> coding journal by the month </h1>
-    <br>
-    <h2> october 10/19</h2>
-    <p> 1 redesigned my portfolio to make it more minimalistic. Something 1 struggled to do was placing the two links for "projects" and "journal". 1 also created my coding room sketch which has images of furniture and when the mouse hover over it a short description and link pops up. For a long time 1 couldn't get the image to disappear and only have the solid colored box. This was because 1 put "background-image" instead of just "background". That was pretty annoying, but once 1 figured it out, 1 liked picking out colors and furniture. </p>
-    <h2> october 10/10</h2>
-    <p> 1 created my portfolio and 1 created my coding journal. 1 was inspired by the website "cyclemon.com" for my portfolio because 1 really liked the flow and the layout. For the coding journal 1 was inspired by computer terminals in the early days of computer science. </p>
-    <h2> september </h2>
-    <p> This month, 1 created my click box program as my website diddy. With this program, 1 learned how to make things with css, html and a bit of java. 0riginally the boxes were animated by hovering over them, but because the animations would cause them to move from there area, some of the boxes just kept glitching. So I added java for the animations to start once the boxes were clicked. I did this with event listeners.  </p>
+    <section id="header">
+        <h1> CODE JOURNAL </h1>
+        <div id="menu">
+            <a href="index.html">
+                <div class="links" id="project">PROJECTS</div>
+            </a>
+            <a href="#text">
+                <div class="links" id="journal">JOURNAL</div>
+            </a>
+        </div>
+    </section>
+    <section id="text">
+
+        <h2> October 19th</h2>
+        <p> I redesigned my portfolio and journal to make it more "me". Something I struggled to do was placing the two links for "projects" and "journal". I also created my coding room sketch which has images of furniture and when the mouse hover over it a short description and link pops up. For a long time I couldn't get the image to disappear and only have the solid colored box. This was because I put "background-image" instead of just "background". That was pretty annoying, but once I figured it out, I liked picking out colors and furniture. </p>
+        <br>
+        <h2> October 10th</h2>
+        <p> I created my portfolio and I created my coding journal. I was inspired by the website "cyclemon.com" for my portfolio because I really liked the flow and the layout. For the coding journal I was inspired by computer terminals in the early days of computer science. </p>
+        <br>
+        <h2> September 19th  </h2>
+        <p> This month, I created my click box program as my first website. With this program, I learned how to make things with css, html and a bit of java. Originally the boxes were animated by hovering over them, but because the animations would cause them to move from there area, some of the boxes just kept glitching. So I added java for the keyframe animations to start once the boxes were clicked. I did this with event listeners. </p>
+    </section>
 </body>
 
 </html>
