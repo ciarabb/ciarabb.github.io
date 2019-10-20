@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    .room {
+        background-size: contain;
+        background-position: relative;
+    }
+
+    .bluehammock {
+        width: 100px;
+        height: 130px;
+        transition: 2s;
+        left: 300px;
+        top: -250px;
+        position: relative;
+        background-size: cover;
+        background-image: url(bluehammock.png)
+    }
+
+    .bluehammock:hover {
+        background: #b5e4ff;
+    }
+
+    .bluehammock p {
+        display: none;
+        color: #000000;
+    }
+
+    .bluehammock:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 13px;
+        position: relative;
+    }
+
+    .bluehammock a {
+        display: none;
+        color: #000000;
+    }
+
+    .bluehammock:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .rainbowhammock {
+        width: 75px;
+        height: 150px;
+        transition: 2s;
+        left: 150px;
+        top: -400px;
+        position: relative;
+        background-size: cover;
+        background-image: url(rainbowhammock.png)
+    }
+
+    .rainbowhammock:hover {
+        background: #fa5c5c;
+    }
+
+    .rainbowhammock p {
+        display: none;
+        color: #000000;
+    }
+
+    .rainbowhammock:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 13px;
+        position: relative;
+    }
+
+    .rainbowhammock a {
+        display: none;
+        color: #000000;
+    }
+
+    .rainbowhammock:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .whitehammock {
+        width: 100px;
+        height: 150px;
+        transition: .5s;
+        left: 200px;
+        top: -550px;
+        position: relative;
+        background-size: cover;
+        background-image: url(whitehammock.png)
+    }
+
+
+    .whitehammock:hover {
+        background: #ffe0b5;
+    }
+
+    .whitehammock p {
+        display: none;
+        color: #000000;
+    }
+
+    .whitehammock:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 13px;
+        position: relative;
+    }
+
+    .whitehammock a {
+        display: none;
+        color: #000000;
+    }
+
+    .whitehammock:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .beanbag {
+        width: 120px;
+        height: 100px;
+        transition: .5s;
+        left: 650px;
+        top: -550px;
+        position: relative;
+        background-size: cover;
+        background-image: url(beanbag.png)
+    }
+
+    .beanbag:hover {
+        background: #b84467;
+    }
+
+    .beanbag p {
+        display: none;
+        color: #000000;
+    }
+
+    .beanbag:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 13px;
+        position: relative;
+    }
+
+    .beanbag a {
+        display: none;
+        color: #000000;
+    }
+
+    .beanbag:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .plant1 {
+        width: 70px;
+        height: 140px;
+        transition: .5s;
+        left: 540px;
+        top: -750px;
+        position: relative;
+        background-size: cover;
+        background-image: url(plant1.png)
+    }
+
+    .plant1:hover {
+        background: #167a26;
+    }
+
+    .plant1 p {
+        display: none;
+        color: #000000;
+    }
+
+    .plant1:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 11px;
+        position: relative;
+    }
+
+    .plant1 a {
+        display: none;
+        color: #000000;
+    }
+
+    .plant1:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .plant2 {
+        width: 80px;
+        height: 100px;
+        transition: .5s;
+        left: 580px;
+        top: -850px;
+        position: relative;
+        background-size: cover;
+        background-image: url(plant2.png)
+    }
+
+    .plant2:hover {
+        background: #41b54b;
+    }
+    .plant2 p {
+        display: none;
+        color: #000000;
+    }
+
+    .plant2:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 11px;
+        position: relative;
+    }
+
+    .plant2 a {
+        display: none;
+        color: #000000;
+    }
+
+    .plant2:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .plant3 {
+        width: 35px;
+        height: 125px;
+        transition: .5s;
+        left: 510px;
+        top: -980px;
+        position: relative;
+        background-size: cover;
+        background-image: url(plant3.png)
+    }
+
+    .plant3:hover {
+        background: #9cc965;
+    }
+
+    .plant3 p {
+        display: none;
+        color: #000000;
+    }
+
+    .plant3:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 11px;
+        position: relative;
+    }
+
+    .plant3 a {
+        display: none;
+        color: #000000;
+    }
+
+    .plant3:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 15px;
+        position: relative;
+    }
+
+
+    .tablechairs {
+        width: 275px;
+        height: 130px;
+        transition: .5s;
+        left: 210px;
+        top: -1030px;
+        position: relative;
+        background-size: cover;
+        background-image: url(tablechairs.png)
+    }
+
+    .tablechairs:hover {
+        background: #111878;
+    }
+
+    .tablechairs p {
+        display: none;
+        color: white;
+    }
+
+    .tablechairs:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 13px;
+        position: relative;
+    }
+
+    .tablechairs a {
+        display: none;
+        color: white;
+    }
+
+    .tablechairs:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .screen1 {
+        width: 100px;
+        height: 70px;
+        transition: .5s;
+        left: 750px;
+        top: -1230px;
+        position: relative;
+        background-size: cover;
+        background-image: url(screen1.png)
+    }
+
+    .screen1:hover {
+        background: #f78b07;
+    }
+
+    .screen1 p {
+        display: none;
+        color: #000000;
+    }
+
+    .screen1:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 11px;
+        position: relative;
+    }
+
+    .screen2 {
+        width: 80px;
+        height: 50px;
+        transition: .5s;
+        left: 410px;
+        top: -1300px;
+        position: relative;
+        background-size: cover;
+        background-image: url(screen2.png)
+    }
+
+    .screen2:hover {
+        background: #733971;
+    }
+    
+    .screen2 p {
+        display: none;
+        color: #000000;
+    }
+
+    .screen2:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 11px;
+        position: relative;
+    }
+
+    .vrscreen {
+        width: 180px;
+        height: 110px;
+        transition: .5s;
+        left: 860px;
+        top: -1430px;
+        position: relative;
+        background-size: cover;
+        background-image: url(vrscreen.png)
+    }
+
+    .vrscreen:hover {
+        background: #72c8db;
+    }
+
+    .vrscreen p {
+        display: none;
+        color: #000000;
+    }
+
+    .vrscreen:hover p {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 13px;
+        position: relative;
+    }
+
+    .vrscreen a {
+        display: none;
+        color: #000000;
+    }
+
+    .vrscreen:hover a {
+        background-color: rgba(255, 255, 255, 0.7);
+        display: block;
+        font-size: 18px;
+        position: relative;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="room"> <img src="room.png"> </div>
+    <div class="bluehammock">
+        <p>these hammocks will be comfortable seats for students who visit the coding room.</p>
+        <a href="http://www.stylemexican.com/hammock-chair-swings.html"> hammocks </a>
+    </div>
+    <div class="rainbowhammock">
+        <p>these hammocks will be comfortable seats for students who visit the coding room.</p>
+        <a href="http://www.stylemexican.com/hammock-chair-swings.html"> hammocks </a>
+    </div>
+    <div class="whitehammock">
+        <p>these hammocks will be comfortable seats for students who visit the coding room.</p>
+        <a href="http://www.stylemexican.com/hammock-chair-swings.html"> hammocks </a>
+    </div>
+    <div class="beanbag">
+        <p>this beanbag will be a comfortable seat for students who visit the coding room.</p>
+        <a href="https://www.urbanoutfitters.com/shop/lounge-noah-velvet?cm_mmc=rakuten-_-affiliates-_-Skimlinks.com-_-1&color=050&quantity=1&ranEAID=TnL5HPStwNw&ranMID=43176&ranSiteID=TnL5HPStwNw-igZaWrqN8tr_JF6zLRGF4w&size=ONE%20SIZE&type=REGULAR&utm_campaign=Skimlinks.com&utm_content=1&utm_medium=affiliates&utm_source=LS&utm_term=571248"> beanbag </a>
+    </div>
+    <div class="plant1">
+        <p>these plants will add greenery to the coding room.</p>
+        <a href="https://www.thesill.com/"> indoor plants </a>
+    </div>
+    <div class="plant2">
+        <p>these plants will add greenery to the coding room.</p>
+        <a href="https://www.thesill.com/"> indoor plants </a>
+    </div>
+    <div class="plant3">
+        <p>these plants will add greenery to the coding room.</p>
+        <a href="https://www.thesill.com/"> indoor plants </a>
+    </div>
+    <div class="tablechairs">
+        <p>these tables and chairs enable students to collaberate on coding projects. </p>
+        <a href="https://www.overstock.com/Home-Garden/5-Piece-Mid-Century-Dining-Set-Acorn-Blue/21252352/product.html"> table and chairs </a>
+    </div>
+    <div class="screen1">
+        <p>these screens can display coding projects. </p>
+    </div>
+    <div class="screen2">
+        <p>these screens can display coding projects. </p>
+    </div>
+    <div class="vrscreen">
+        <p>this virtual reality screen will allow students to work on projects that use virtual reality. </p>
+        <a href="https://www.bestbuy.com/site/oculus-quest-all-in-one-vr-gaming-headset-64gb-black/6342914.p?skuId=6342914&ref=212&loc=1&extStoreId=835&ref=212&loc=1&ds_rl=1260666&ds_rl=1266837&ds_rl=1268709&ds_rl=1266837&gclid=EAIaIQobChMIq-W0htSo5QIVDhQMCh0HvQzpEAQYBSABEgLaWvD_BwE&gclsrc=aw.ds"> vr system </a>
+    </div>
+</body>
+
+</html>
