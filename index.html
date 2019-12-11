@@ -31,14 +31,14 @@
     }
 
     h4 {
-        color: cornflowerblue;
+        color: #7597ff;
         font-size: 20px;
     }
 
 
 
     p {
-        color: cornflowerblue;
+        color: #7597ff;
         font-size: 15px;
         width: 60%;
     }
@@ -69,18 +69,27 @@
 
     #two {
         top: 100%;
-        background-color: #ffe8f5;
+        background-color: #ffb7b5;
 
     }
 
     #three {
-        background-color: #def2da;
+        background-color: #92ffca;
         top: 200%;
     }
 
     #four {
-        background-color: #edf0ff;
+        background-color: #ffdd75;
         top: 300%;
+    }
+
+    #five {
+        background-color:#ff9ac2;
+        top: 400%;
+    }
+    #six {
+        background-color:#ffc289;
+        top: 500%;
     }
 
     #boxclick {
@@ -151,8 +160,14 @@
         height: 100%;
         position: absolute;
     }
+
+@media (max-device-width: 667px)
+{
+
+}
+
     </style>
-    }
+    
 </head>
 
 <body>
@@ -183,13 +198,27 @@
             </a>
             <p> I made this website to design a coding room. When the mouse hovers over the piece of furniture, a description and the link appears. </p>
     </section>
-    <section id="four"><img src="mangos.png" id="mango">
-        <div id="boxclick">
-            <a href="mango.html">
-                <h4> MANGO </h4>
+    <section id="four">
+        <img src="fizzbuzz.png" id="clickboxgif">
+            <div id="boxclick">
+            	<a href="https://scratch.mit.edu/projects/351608460">
+                <h4> FIZZBUZZ </h4>
             </a>
-            <p> This is my first javascript website and it displays 100 images of  mangos. </p>
-        
+            <p> This project counts from 1 to 100. If the number is a multiple of 3, it says "Fizz" and if the number is a multiple of 5, it says "Buzz" instead of the number. If the number is a multiple of 3 and 5, it says "FizzBuzz". </p> </div>
+           </section>
+    <section id="five">
+            <a href="postcard.html"> <img src="postcard.png" id="clickboxgif">
+             <div id="boxclick">  
+              <h4>POSTCARD</h4>
+            </a>
+            <p> This website displays a postcard with an image of a country and the word "hello" in the language of that country when clicked. </p>   
+    </section>
+    <section id="six">
+            <a href="backgroundcolor.html"> <img src="random_color_code.png" id="coderoom">
+                <div id="boxclick">
+                <h4>CLICK COLOR</h4>
+            </a>
+            <p> This website makes a random color when clicked. </p>   
     </section>
     <br>
     <br>

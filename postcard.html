@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #postcard {
+		width:600px;
+		height:400px;
+		background-image:url(https://i.pinimg.com/originals/15/72/42/1572422f88edf728af18704d8b4a39b2.jpg);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		font-size: 100px;
+
+	} 
+
+	#country {
+		width:250px;
+		height:200px;
+		position: relative;
+		background-size:contain;
+		top:17%;
+		left:2%;
+	}
+
+	#hello {
+		width:300px;
+		height:100px;
+		position:relative;
+		top:40%;
+		left:300px;
+		font-size: 60px;
+	}
+
+</style>
+</head>
+
+<body>
+    <div id="postcard">
+    <div id="hello"></div>
+    <div id="country"></div>
+    </div>
+
+    <script>
+
+    var language = ["こんにちは", "مرحبا", "Ciao", "Bonjour", "Hallå", "Hallo", "Witaj", "Merhaba", "नमस्ते", "Hola"];
+
+    var place = ["url(https://www.neverendingvoyage.com/wp-content/uploads/2019/09/kyoto-japan-26.jpg)", "url(https://afar-production.imgix.net/uploads/images/post_images/images/BjMm2W4AJM/original_open-uri20130619-13009-1rs05tt?1383816117?ixlib=rails-0.3.0&auto=format%2Ccompress&crop=entropy&fit=crop&h=719&q=80&w=954)", "url(https://handluggageonly.co.uk/wp-content/uploads/2018/02/Hand-Luggage-Only-8-5.jpg)",  "url(https://userscontent2.emaze.com/images/cda074c9-138e-49f2-9d1e-7099d5366f02/1d05446befd80c72feb4fe582b7f101e.jpg)", "url(https://www.thesweetestway.com/wp-content/uploads/2016/03/Sweden-in-Winter-8.jpg)", "url(https://mk0travelawayrru2xew.kinstacdn.com/wp-content/uploads/2013/04/cochem-town-germany.jpg)", "url(https://images.squarespace-cdn.com/content/v1/58b2f9802e69cf75a41179db/1524244173972-IJXEUAI238UAYEYZSYGS/ke17ZwdGBToddI8pDm48kF8LQNpfORHiz8nbszVBpA17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmHHRMqniMJbuwH8EZRFFu5aV6lDaIZ2bC5nfnM0n2DvQ_Vy7lYb4IFu31Gc-eufZx/image-asset.jpeg?format=2500w)",
+        "url(https://secure.i.telegraph.co.uk/multimedia/archive/01992/vicki-istanbul_1992908c.jpg)", "url(https://www.history.com/.image/t_share/MTU3ODc5MDg3NTA5MDg3NTYx/taj-mahal-2.jpg)", "url(https://spanish-trails.com/wp-content/uploads/2015/01/Featured-Blog-photo-2-1030x601.jpg)"
+    ];
+
+
+    function randomNumber() {
+        return Math.floor(Math.random() * 9);
+
+    }
+
+        var country = document.getElementById('country');
+
+        document.addEventListener("click", function() {
+            var x = randomNumber();
+            console.log(x);
+            hello.innerText = language[x];
+            country.style.backgroundImage = place[x];
+
+        })
+
+    </script>
+
+     
+</body>
+
+</html>
