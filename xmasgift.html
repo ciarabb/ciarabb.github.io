@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Oswald:300&display=swap');
+    p {
+        color: white;
+        font-size: 30px;
+        width: 100%;
+        font-family: 'Oswald', sans-serif;
+        text-align:center;
+        position:relative;
+
+    }
+
+    h2 {
+        color: white;
+        font-size: 50px;
+        width: 100%;
+        text-align:center;
+        font-family: 'Oswald', sans-serif;
+        position:relative;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h1 {
+        font-size:100px;
+        color:white;
+        position: absolute; 
+        top: 150px; 
+        left: 400px; 
+        width: 100%;
+        font-family: 'Amatic SC';
+    }
+    #newyork {
+        width: 100%;
+        height:630px;
+        position: relative;
+
+    }
+    #xmas {
+        width: 540px;
+        height:360px;
+        position: relative;
+        top:100px;
+        left:360px;
+
+    }
+    #one {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0%;
+        left:0%;
+    }
+
+    #two {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:100%;
+        left:0%;
+        background-color:#395a32;
+    }
+    #three {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:200%;
+        left:0%;
+        background-color:#395a32;
+    }
+    #four {
+        width: 100%;
+        height: 150%;
+        position: absolute;
+        top:300%;
+        left:0%;
+        background-color:#870020;
+    }
+    #five {
+        width: 100%;
+        height: 150%;
+        position: absolute;
+        top:450%;
+        left:0%;
+        background-color:#870020;
+    }
+    #six {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:600%;
+        left:0%;
+        background-color:#870020;
+    }
+
+    .snowflake {
+        color: #fff;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        text-shadow: 0 0 5px #000;
+        position:relative;
+    }
+
+    @-webkit-keyframes snowflakes-fall {
+        0% {
+            top: -10%
+        }
+
+        100% {
+            top: 100%
+        }
+    }
+
+    @-webkit-keyframes snowflakes-shake {
+
+        0%,
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0)
+        }
+
+        50% {
+            -webkit-transform: translateX(80px);
+            transform: translateX(80px)
+        }
+    }
+
+    @keyframes snowflakes-fall {
+        0% {
+            top: -10%
+        }
+
+        100% {
+            top: 100%
+        }
+    }
+
+    @keyframes snowflakes-shake {
+
+        0%,
+        100% {
+            transform: translateX(0)
+        }
+
+        50% {
+            transform: translateX(80px)
+        }
+    }
+
+    .snowflake {
+        position: fixed;
+        top: -10%;
+        z-index: 9999;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+        -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+        -webkit-animation-duration: 10s, 3s;
+        -webkit-animation-timing-function: linear, ease-in-out;
+        -webkit-animation-iteration-count: infinite, infinite;
+        -webkit-animation-play-state: running, running;
+        animation-name: snowflakes-fall, snowflakes-shake;
+        animation-duration: 10s, 3s;
+        animation-timing-function: linear, ease-in-out;
+        animation-iteration-count: infinite, infinite;
+        animation-play-state: running, running
+    }
+
+    .snowflake:nth-of-type(0) {
+        left: 1%;
+        -webkit-animation-delay: 0s, 0s;
+        animation-delay: 0s, 0s
+    }
+
+    .snowflake:nth-of-type(1) {
+        left: 10%;
+        -webkit-animation-delay: 1s, 1s;
+        animation-delay: 1s, 1s
+    }
+
+    .snowflake:nth-of-type(2) {
+        left: 20%;
+        -webkit-animation-delay: 6s, .5s;
+        animation-delay: 6s, .5s
+    }
+
+    .snowflake:nth-of-type(3) {
+        left: 30%;
+        -webkit-animation-delay: 4s, 2s;
+        animation-delay: 4s, 2s
+    }
+
+    .snowflake:nth-of-type(4) {
+        left: 40%;
+        -webkit-animation-delay: 2s, 2s;
+        animation-delay: 2s, 2s
+    }
+
+    .snowflake:nth-of-type(5) {
+        left: 50%;
+        -webkit-animation-delay: 8s, 3s;
+        animation-delay: 8s, 3s
+    }
+
+    .snowflake:nth-of-type(6) {
+        left: 60%;
+        -webkit-animation-delay: 6s, 2s;
+        animation-delay: 6s, 2s
+    }
+
+    .snowflake:nth-of-type(7) {
+        left: 70%;
+        -webkit-animation-delay: 2.5s, 1s;
+        animation-delay: 2.5s, 1s
+    }
+
+    .snowflake:nth-of-type(8) {
+        left: 80%;
+        -webkit-animation-delay: 1s, 0s;
+        animation-delay: 1s, 0s
+    }
+
+    .snowflake:nth-of-type(9) {
+        left: 90%;
+        -webkit-animation-delay: 3s, 1.5s;
+        animation-delay: 3s, 1.5s
+    }
+
+    .snowflake:nth-of-type(10) {
+        left: 25%;
+        -webkit-animation-delay: 2s, 0s;
+        animation-delay: 2s, 0s
+    }
+
+    .snowflake:nth-of-type(11) {
+        left: 65%;
+        -webkit-animation-delay: 4s, 2.5s;
+        animation-delay: 4s, 2.5s
+    }
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+    </div>
+    </style>
+</head>
+
+<body>
+    <section id="one">
+        <div class="newyork">
+    <img src="newyork.jpg" id="newyork">
+    <h1> Merry Christmas</h1>     
+</div>
+        
+    </section>
+
+    <section id="two">
+        <img src="xmas.jpg" id="xmas">
+    </section>
+    <section id="three"> 
+        <h2> Dear Sienna, Levi and Jet, </h2> 
+        <br>
+        <h2> I hope you have a great Xmas and summer holiday. I can't wait to see you soon. Enjoy the games below! Love you lots,</h2>
+        <br> 
+        <h2> Ciara</h2></section>
+
+    <section id="four"> 
+        <iframe src="https://scratch.mit.edu/projects/354783072/embed" allowtransparency="true" align="center" width="100%" height="500" frameborder="0" scrolling="no" allowfullscreen position="relative"></iframe>
+        <p> You have 60 seconds to catch the falling gifts with the bucket. Press the green flag to start. </p>
+    </section>
+
+    <section id="five"> 
+        <iframe src="https://scratch.mit.edu/projects/354660787/embed" allowtransparency="true" align="center" width="100%" height="500" frameborder="0" scrolling="no" allowfullscreen position="relative"></iframe>
+        <p> Play hide and seek with Santa. You have 60 seconds to find him in different spots. Press the green flag to start.  </section>
+
+    <section id="six"> 
+        <iframe src="https://scratch.mit.edu/projects/355625052/embed" allowtransparency="true" align="center" width="100%" height="500" frameborder="0" scrolling="no" allowfullscreen position="relative"></iframe>
+        <p> Match all the cards with the same symbols to win. Press the green flag to start.</section>
+</body>
+
+</html>
