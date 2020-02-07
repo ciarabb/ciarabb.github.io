@@ -1,0 +1,72 @@
+
+  
+ <!DOCTYPE html>
+<html>
+<head>
+	<style>
+body {
+	margin: 0;
+	padding:0;
+/*	overflow:hidden;
+*/	background-color:white;
+}
+.bees{
+background-image: url(largebee.png);    height: 190px;
+    width :180px;
+    background-size :contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    pointer-events:none;
+    margin:10px;
+    transition:.1s;
+
+}
+
+
+	</style>
+</head>
+
+<body>
+<!-- 	<div id ="bees"></div>
+ -->
+
+	<script type="text/javascript">
+
+
+function makeBees (i) { 
+ 		var bee = document.createElement("div");
+ 		document.body.appendChild(bee);
+ 		bee.classList.add("bees");
+ 		bee.style.zIndex="i";
+
+
+function moveRandomly() {bee.style.left = Math.random()*800 + "px";
+	bee.style.top = Math.random()*800+ "px";};
+
+ 		setInterval(moveRandomly, 100);
+
+
+ 		
+ 	 document.addEventListener("mousemove", function  (event){
+		console.log(event.clientX + "," + event.clientY);
+	bee.style.left = event.clientX - Math.random()*600 + "px";
+	bee.style.top = event.clientY - Math.random()*600+ "px";
+
+		
+
+	 });//end of event listener//
+
+};
+
+
+
+	// var bee = document.getElementById("bees");
+
+	
+
+	
+	for (var i=0; i<30; i=i+1) {makeBees(i)};	
+
+		</script>
+</body>
+</html>
