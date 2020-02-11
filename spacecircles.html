@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <title></title>
+
+    <style type="text/css">
+    body {
+        margin: 0;
+        background-size: cover;        background-repeat: none;
+        z-index: -10;
+        position: inherit;
+        background-image: url(outerspace.jpeg);
+    }
+
+    #know {
+        left: 0%;
+
+    }
+    .container {
+        opacity: 0.9;
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        display: inline-block;
+        border-radius: 50%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    #feel {
+        left: 110%;
+
+    }
+
+    #plate {
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 47%;
+        left: 25%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+    }
+
+
+    #bar {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 40px;
+        z-index: 1;
+
+
+    }
+
+    .subtitle {
+        position: absolute;
+        font-family: 'Sans Serif';
+        color: white;
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        font-size: 30px;
+    }
+
+    #know-title {
+        left: 0%;
+
+    }
+
+    #feel-title {
+        left: 50%;
+
+    }
+
+    </style>
+</head>
+
+<body>
+    </div>
+    <div id="bar">
+        <div class="subtitle" id="know-title">
+            <center>What I know</center>
+        </div>
+        <div class="subtitle" id="feel-title">
+            <center>What I feel</center>
+        </div>
+    </div>
+    <div id="meal">
+        <div class="meal" id="plate"></div>
+         <div class="container" id="know">
+        <div class="containerText" id="knowText"></div>
+    <div class="container" id="feel">
+        <div class="containerText" id="feelText"></div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    var know = document.getElementById("know");
+    var knowText = document.getElementById("knowText");
+    var feel = document.getElementById("feel");
+    var feelText = document.getElementById("feelText");
+    var plate = document.getElementById("plate");
+
+    var celestial = ["sun", "mars", "mercury", "jupiter", "moon", "venus"];
+
+    function objects() {
+        var q = Math.round(Math.random() * 6);
+        console.log(q);
+        plate.style.backgroundImage = "url(" + celestial[q] + ".jpg)";
+        know.style.backgroundImage = "url(" + celestial[q] + ".jpg)";
+        feel.style.backgroundImage = "url(" + celestial[q] + ".jpg)";
+
+        if (q == 0) {
+            know.style.backgroundImage = "url(sun2.jpg)";
+            feel.style.backgroundImage = "url(sun1.jpg)";
+        }
+
+        if (q == 1) {
+            know.style.backgroundImage = "url(mars2.jpg)";
+            feel.style.backgroundImage = "url(mars1.jpg)";
+        }
+
+        if (q == 2) {
+            know.style.backgroundImage = "url(mercury2.jpg)";
+            feel.style.backgroundImage = "url(mercury1.jpg)";
+        }
+
+        if (q == 3) { 
+            know.style.backgroundImage = "url(jupiter2.jpg)";
+            feel.style.backgroundImage = "url(jupiter1.jpg)";
+        }
+
+        if (q == 4) {
+            know.style.backgroundImage = "url(moon1.jpg)";
+            feel.style.backgroundImage = "url(moon2.jpg)";
+        }
+
+
+        if (q == 5) {
+            know.style.backgroundImage = "url(venus1.jpg)";
+            feel.style.backgroundImage = "url(venus2.jpg)";
+        }
+
+    };
+
+
+
+    plate.addEventListener("click", objects);
+    </script>
+</body>
+</html>
