@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style> 
+    body {
+        background-image: url('savannah.jpg');
+        background-size: cover;
+        position:absolute;
+    }
+
+</style>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var cheetah = {
+        name: "cheetah",
+        type: "cheetah",
+        speed: 76,
+        width: "200px",
+        height: "200px", 
+        left: 0
+    };
+
+    var elephant = {
+        name: "elephant",
+        type: "elephant",
+        speed: 15,
+        width: "200px",
+        height: "200px", 
+        left: 0
+    };
+
+   
+    var horse = {
+        name: "horse",
+        type: "horse",
+        speed: 55, 
+        width: "200px", 
+        height: "200px", 
+        left: 0
+    };
+
+
+
+     var cow = {
+        name: "cow",
+        type: "cow",
+        speed: 25,
+        width: "200px",
+        height: "200px", 
+        left: 0
+    };
+
+
+   
+    function makeAnimal(x) {
+        var d = document.createElement("div");
+        document.body.appendChild(d);
+        d.style.position = "relative";
+        d.style.left = x.left;
+        d.style.backgroundSize = "contain";
+        d.style.backgroundRepeat="no-repeat";
+
+        d.id = x.name;
+        d.style.backgroundImage = "url(" + x.type + ".png)";
+        d.style.width = x.width;
+        d.style.transition="1s";
+        d.style.height = x.height;
+        
+        var left = 0;
+
+        function go() {
+        	left = left + x.speed;
+            d.style.left = left + "px";
+        	console.log(left);
+        }
+
+
+        d.addEventListener(
+            "click",
+            function() {
+                setInterval(go, 200);
+            });
+
+
+
+    }; 
+
+    makeAnimal(cheetah);
+    makeAnimal(elephant);
+    makeAnimal (horse);
+    makeAnimal(cow);
+
+
+    </script>
+</body>
+
+</html>
