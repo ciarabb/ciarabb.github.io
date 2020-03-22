@@ -2,38 +2,47 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <style>
-    body {
-        background: white;
-        margin-left: 10px;
+    @media (max-device-width: 667px) {}
+
+    a:link {
+        text-decoration: none;
     }
 
     h1 {
-        position: absolute;
-        left: 36%;
-        top: 100px;
-        width: 400px;
-        font-family: Fira mono, sans-serif;
         color: #2f5ea8;
         font-size: 45px;
+        font-size: 50px;
+        position: relative;
+        top: 100px;
+        left: 460px;
+        display:inline-block;
     }
 
     h2 {
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         color: black;
         position: relative;
-        width: 50%;
-        text-align: center;
+        font-family: Fira mono, sans-serif;
+        width: 80%;
+        left:10%;
+        text-align: left;
     }
 
     p {
         color: black;
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         position: relative;
-        left: 10%;
-        width: 50%;
+        font-family: Fira mono, sans-serif;
+        width: 80%;
+        left:10%;
         text-align: left;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     section {
@@ -42,78 +51,78 @@
         position: absolute;
     }
 
-
     #header {
         background-color: white;
         top: 0%;
     }
 
+    #text {
+        background-color: white;
+        top: 50%;
+    }
+    #greyheader {
+        color: #495057;
+    }
 
 
-    .links {
+    .nav-item {
         display: inline-block;
         width: 120px;
         height: 50px;
-        top: 10px;
         font-weight: bold;
         font-size: 25px;
         border-color: white;
-        color: lightcoral;
-        position: absolute;
-
-    }
-
-    #menu {
-        width: 400px;
-        height: 100%;
-        position: absolute;
-    }
-
-    #journal {}
+        left: 900px;
+        top: -50px;
+       position:relative;
+   }
 
 
-
-    #project {
-        left: 150px;
-
-    }
-
-
-    #text {
-        background-color: white;
-        top: 60%;
-    }
     </style>
 </head>
 
 <body>
     <section id="header">
-        <h1> CODE JOURNAL </h1>
-        <div id="menu">
-            <a href="index.html">
-                <div class="links" id="project">PROJECTS</div>
-            </a>
-            <a href="#text">
-                <div class="links" id="journal">JOURNAL</div>
-            </a>
+        <h1> coding </h1> <h1 id="greyheader">   journal </h1>
+
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="index.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#text">Journal</a>
+                </li>
+            </ul>
         </div>
+
     </section>
     <section id="text">
-         <h2> March 7th</h2>
+        <h2> March 19th</h2>
+        <p> I started learning jQuery through Khan Academy and other websites. I made a music album website using animation element as well as using a button to change a page. It's definitely one of my favorite websites as the side step animation effect looks really cool as well as the album covers. I also started making a quiz, but it's been a bit difficult to figure out using jQuery. I think the library is very helpful. I also started learning bootstrap as an extension of CSS and I've been remodeling my portfolio with it!</p>
+        <br>
+        <h2> March 7th</h2>
         <p> I fixed the animal race website and made the animals speeds or pixels per 1/5 of a second correspond to their miles per hour. Algorithm: x=mph 60/x * 60 /5000 (mile width in px) /5 (px per 200 milliseconds). I can add more animals and I also think it would be interesting to explore the average movement of each animal throughout a prolonged period. </p>
+        <br>
         <h2> February 27th</h2>
         <p> I made an animal race website based on the car race, as part of the object assignment. I gave my animals different speeds based on their mph. I think it would be interesting to put mile markers, but I'm not sure how I'd go about that. My background repeats, so perhaps I could use that as a metric for distance. </p>
+        <br>
         <h2> February 23rd</h2>
         <p> Today I added my recipe book to my website. I still have to take photos of paella and arroz al horno before I share it with my grandmother. I made the table of contents by making different divs corresponding to a function that made all the contents disappear and a photo and recipe appear. It was a bit hard at first to figure out how to do this, but I found out with display I could just do none. Then the back or "atras" button restored the contents to their initial appearence.</p>
+        <br>
         <h2> February 11th</h2>
         <p> Today I linked my dolphin twine interactive story to my personal website. I also linked a feel vs know website, which I did instead of a Valentine's Day card. I based upon the eating animals website and had the idea to use space objects in both pictures and in science fiction drawings. It took a while to figure out what each part of the code does, but it made sense once I started messing around with the code. Then I just used images I wanted to use and linked them to each category, while also using a random generator. </p>
+        <br>
         <h2> February 7th</h2>
         <p> I haven't been coding for a while, but this week I made a swarming bee website. Firstly, I coded the style of the bee and made a function to display 30 of them. Then I made them follow the x and y of the mouse movement. This gave the bees a swarming effect and they were grouped in diffrent manners.</p>
+        <br>
         <h2> December 22nd</h2>
         <p> For the Xmas gift, it was difficult to find the code for the falling snow that did not already have a background, I found one that was only html and it came out nicely. For the games, I found games that were similar to the ones I wanted to make. I also broadcasted a message so the games had a play image and animation. I also made a message to display the final score. I changed a lot of the "sprites" and background images to make it Xmas themed. </p>
+        <br>
         <h2> December 11th</h2>
         <p> I fixed a few things in both of my javascript websites, the background color and the postcard website. It was really satisfying to get them right. I also uploaded them to my website and changed a few visual aspects to it. </p>
-        <br><h2> December 6th</h2>
+        <br>
+        <h2> December 6th</h2>
         <p> I improved my twine website by adding a better font and adjusting the images to fill the whole screen. I want to play audio sounds of dolphin clicks and whistles when the dolphins are pressed. I need to export the twine story code to java and add it within the code.</p>
         <br>
          <h2> November 26th</h2>

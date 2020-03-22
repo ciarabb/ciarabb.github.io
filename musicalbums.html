@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        h1, h2, h3, h4, h5 {
+		font-size: 20px;
+		color:black;
+		font-family: 'Open Sans', sans-serif;
+
+	}
+	
+	h6{
+		font-size: 50px;
+		color:black;
+		font-family: 'Open Sans', sans-serif;
+
+	}
+
+	img {
+		height:400px;
+		width:400px;
+	}
+
+	button {
+		font-size: 20px;
+		font-family: 'Open Sans', sans-serif;
+		background-color: #55b3e6;
+    left: 40%;
+    position:relative;
+	}
+	</style>
+</head>
+
+<body>
+    <h6> Favorite Music Albums 2010-2020</h6>
+    <h1> Igor </h1>
+    <img id="1" src="igor.jpg">
+    <br><br><br><br><br>
+    <h2> Freudian </h2>
+    <img id="2" src="freud.jpg">
+    <br><br><br><br><br>
+    <h3> Iridesence </h3>
+    <img id ="3" src="iris.jpg">
+    <br><br><br><br><br>
+    <h4> Lust for Life</h4>
+    <img id ="4" src="lustforlife.jpg">
+    <br><br><br><br><br>
+    <h5> Apricot Princess </h5>
+    <img id="5" src="apricot.jpg">
+    <br><br><br><br><br>
+    <button type="button" id="travel">Time travel 30 years</button>
+    <br><br><br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script>
+   		var travel = function () {
+   			$("h6").text("Favorite Music Albums 1980-1990");
+   			$("h1").text("The Works");
+   			$("h2").text("The Queen is Dead");
+   			$("h3").text("Thriller");
+   			$("h4").text("Slippery When Wet");
+   			$("h5").text("Different Light");
+   			$("#1").attr("src", "works.png");
+   			$("#2").attr("src", "deathqueen.jpg");
+   			$("#3").attr("src", "thriller.jpg");
+   			$("#4").attr("src", "slippery.jpg");
+   			$("#5").attr("src", "light.jpg");
+   		}
+       
+        $("#travel").on("click", function() {
+            console.log("you clicked me!!");
+            travel();
+        });
+
+        $("#1").animate({
+            marginLeft: "50px",
+        }, 500, function () {
+            $("#2").animate({
+                marginLeft: "225px",
+            }, 1250, function () {
+            $("#3").animate({
+                marginLeft: "400px",
+            }, 2000, function () {
+            $("#4").animate({
+                marginLeft: "575px",
+            }, 2750, function () {
+            $("#5").animate({
+                marginLeft: "750px",
+            }, 3500
+            );
+            });
+            });
+            });
+        });
+        $("h1").animate({
+            marginLeft: "50px",
+        }, 500, function () {
+            $("h2").animate({
+                marginLeft: "225px",
+            }, 1250, function () {
+            $("h3").animate({
+                marginLeft: "400px",
+            }, 2000, function () {
+            $("h4").animate({
+                marginLeft: "575px",
+            }, 2750, function () {
+            $("h5").animate({
+                marginLeft: "750px",
+            }, 3500
+            );
+            });
+            });
+            });
+        });
+         </script>
+</body>
+
+</html>
