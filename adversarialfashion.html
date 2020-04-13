@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style >
+
+	#adversarial {
+		position: relative;
+	}
+
+</style>
+</head>
+<body>
+	<img id="adversarial" src="survival.png">
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script> 
+		$(document).ready(function(){
+		$("#adversarial").animate({
+            width: "150px",
+            left: "550px", 
+            top: "200px"
+        }, 2000, function () {  
+        });        
+	});
+
+</script>
+</html>

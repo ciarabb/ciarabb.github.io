@@ -11,6 +11,10 @@
 		font-family: 'Open Sans', sans-serif;
 
 	}
+
+    a:link {
+        text-decoration: none;
+    }
 	
 	h6{
 		font-size: 50px;
@@ -28,34 +32,54 @@
 		font-size: 20px;
 		font-family: 'Open Sans', sans-serif;
 		background-color: #55b3e6;
-    left: 40%;
-    position:relative;
+        left: 40%;
+        position:relative;
 	}
+
 	</style>
 </head>
 
 <body>
     <h6> Favorite Music Albums 2010-2020</h6>
+
+    <a id="uno" href="https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE">
     <h1> Igor </h1>
     <img id="1" src="igor.jpg">
+    <a>
     <br><br><br><br><br>
+
+    <a id="dos" href="https://open.spotify.com/album/3xybjP7r2VsWzwvDQipdM0">
     <h2> Freudian </h2>
     <img id="2" src="freud.jpg">
+    <a>
     <br><br><br><br><br>
+
+    <a id="tres" href="https://open.spotify.com/album/3Mj4A4nNJzIdxOyS4yzOhj">
     <h3> Iridesence </h3>
     <img id ="3" src="iris.jpg">
+    <a>
     <br><br><br><br><br>
+
+    <a id="cuatro" href="https://open.spotify.com/album/7xYiTrbTL57QO0bb4hXIKo?highlight=spotify:track:0mt02gJ425Xjm7c3jYkOBn">
     <h4> Lust for Life</h4>
     <img id ="4" src="lustforlife.jpg">
+    <a>
     <br><br><br><br><br>
+
+    <a id="cinqo" href="https://open.spotify.com/album/2NBVxjZcbH5H1N1Ab2ExDH?highlight=spotify:track:28GbaBYFpYi1J61fXnGSfd">
     <h5> Apricot Princess </h5>
     <img id="5" src="apricot.jpg">
+    <a>
     <br><br><br><br><br>
-    <button type="button" id="travel">Time travel 30 years</button>
+
+    <button type="button" id="back">Time travel back 30 years</button>
+    <button type="button" id="forward">Time travel forward 30 years</button>
     <br><br><br>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-   <script>
-   		var travel = function () {
+    <script>
+   		var rewind = function () {
    			$("h6").text("Favorite Music Albums 1980-1990");
    			$("h1").text("The Works");
    			$("h2").text("The Queen is Dead");
@@ -67,11 +91,48 @@
    			$("#3").attr("src", "thriller.jpg");
    			$("#4").attr("src", "slippery.jpg");
    			$("#5").attr("src", "light.jpg");
+            $("#uno").attr("href", "https://open.spotify.com/album/0FbnXAGmgmWBmNthZSgm43");
+            $("#dos").attr("href", "https://open.spotify.com/album/5Y0p2XCgRRIjna91aQE8q7");
+            $("#tres").attr("href", "https://open.spotify.com/album/2ANVost0y2y52ema1E9xAZ");
+            $("#cuatro").attr("href", "https://open.spotify.com/album/0kBfgEilUFCMIQY5IOjG4t");
+            $("#cinqo").attr("href", "https://open.spotify.com/album/3hT7UdiMQ2FtQp9BDXFqXl");
    		}
-       
-        $("#travel").on("click", function() {
+
+        var travel = function () {
+            $("h6").text("Favorite Music Albums 2010-2020");
+            $("h1").text("Igor");
+            $("h2").text("Freudian");
+            $("h3").text("Iridesence");
+            $("h4").text("Lust for Life");
+            $("h5").text("Apricot Princess");
+            $("#1").attr("src", "igor.jpg");
+            $("#2").attr("src", "freud.jpg");
+            $("#3").attr("src", "iris.jpg");
+            $("#4").attr("src", "lustforlife.jpg");
+            $("#5").attr("src", "apricot.jpg");
+            $("#uno").attr("href", "https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE");
+            $("#dos").attr("href", "https://open.spotify.com/album/3xybjP7r2VsWzwvDQipdM0");
+            $("#tres").attr("href", "https://open.spotify.com/album/3Mj4A4nNJzIdxOyS4yzOhj");
+            $("#cuatro").attr("href", "https://open.spotify.com/album/7xYiTrbTL57QO0bb4hXIKo?highlight=spotify:track:0mt02gJ425Xjm7c3jYkOBn");
+            $("#cinqo").attr("href", "https://open.spotify.com/album/2NBVxjZcbH5H1N1Ab2ExDH?highlight=spotify:track:28GbaBYFpYi1J61fXnGSfd")
+        }
+
+        $(document).ready(function(){
+        $("#forward").hide();
+        });
+
+        $("#back").on("click", function() {
+            console.log("you clicked me!!");
+            rewind();
+            $(this).hide();
+            $("#forward").show();
+        });
+
+        $("#forward").on("click", function() {
             console.log("you clicked me!!");
             travel();
+            $("#forward").hide();
+            $("#back").show();
         });
 
         $("#1").animate({
@@ -94,6 +155,7 @@
             });
             });
         });
+
         $("h1").animate({
             marginLeft: "50px",
         }, 500, function () {
