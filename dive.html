@@ -115,8 +115,7 @@
     #twelve {
         top: 1100%;
     }
-
-
+  
     .nav-item {
         display: inline-block;
         width: 120px;
@@ -124,10 +123,17 @@
         font-weight: bold;
         font-size: 23px;
         border-color: white;
-        left: 900px;
+        left: 800px;
         top: -90px;
         position: relative;
     }
+
+    #home  {
+        left: -850px;
+        position: relative;
+        color: lightcoral;
+    }
+
     </style>
 </head>
 
@@ -136,11 +142,14 @@
         <h2> deep dives are areas of study and as I learn I make projects to practice my skills.</h2>
         <div class="container">
             <ul class="nav">
+                <li class = "nav-item">  
+                 <a class="nav-link"  href="index.html" id="home"> Home </a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-info dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="sketches.html"> sketches</a>
-                        <a class="dropdown-item" href="dive.html"> dives</a>
+                        <a class="dropdown-item" href="dive.html"> dives </a>
                     </div>
                 </li>
                 <li class="nav-item">

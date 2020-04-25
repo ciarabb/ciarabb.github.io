@@ -49,31 +49,10 @@
 // }
 
 
-// perlin noise ball
-// function setup ( ) {
-// 	createCanvas(400,400);
-// }
-// var xoff1 = 0;
-// var xoff2 = 2000;
-
-
-// function draw() {
-// 	background(0);
-// 	var x = map(noise(xoff1), 0, 1, 0, width);
-// 	var y = map(noise(xoff2), 0, 1, 0, height);
-// 	xoff1 += 0.02;
-// 	xoff2 += 0.02;
-// 	ellipse(x, y, 20, 20);
-
-
-// }
-
-
-//random points
+// random points
 // function setup() {
 // 	createCanvas(400,400);
 // }
-
 
 // function draw() {
 // 	background(0);
@@ -81,7 +60,6 @@
 // 	for (var x=0; x<width; x++) {
 // 		stroke(255);
 // 		point(x, random(height));
-
 // 	}
 // }
 
@@ -120,25 +98,7 @@
 //   }
 // }
 
-
-// function setup() {
-// 	createCanvas(400,400);
-// }
-
-
-// function draw() {
-// 	background(0);
-// }
-
-// function setup() {
-// 	createCanvas(400,400);
-// }
-
-
-// function draw() {
-// 	background(0);
-// }
-
+//flowchart for later
 // var inc =0.1;
 // var scl = 10;
 // var cols, rows;
@@ -162,7 +122,7 @@
 // 			xoff += inc;
 // 			stroke(0);
 // 			push();
-// 			translate(x*scl, y*scl)
+// 			translate(x*scl, y*scl);
 // 			rotate (v.heading());
 // 			line(0, 0, scl, 0);
 // 			pop();
@@ -170,46 +130,29 @@
 // 		yoff+=inc;
 // 		zoff+= .0005;
 // 	}
+
 // }
 
-var inc =0.1;
-var scl = 10;
-var cols, rows;
-var zoff = 0;
+// function Particle()
 
-function setup() {
+
+//https://www.youtube.com/watch?v=BjoM9oKOAKY
+
+let pos;
+
+function setup( ) {
 	createCanvas(400,400);
-	cols = floor(width / scl);
-	rows = floor(height / scl);
+	pos = createVector(width/2, height/2);
+	background(0);
 }
 
-
-function draw() {
-	var yoff = 0;
-	for (var y = 0; y < rows; y++) {
-		var xoff=0;
-		for (var x = 0; x < cols; x++) {
-			var index = (x + y * width ) * 4;
-			var angle = noise(xoff, yoff, zoff) * TWO_PI;
-			var v = p5.Vector.fromAngle(angle);
-			xoff += inc;
-			stroke(0);
-			push();
-			translate(x*scl, y*scl);
-			rotate (v.heading());
-			line(0, 0, scl, 0);
-			pop();
-		}
-		yoff+=inc;
-		zoff+= .0005;
-	}
-
+function draw ( ) {
+	stroke(255,100);
+	strokeWeight(2);
+	point(pos.x, pos.y);
+	pos.x=pos.x + random(-1,1);
+	pos.y=pos.y + random(-1,1);
 }
-
-function Particle()
-
-
-
 </script>
 
 </body>

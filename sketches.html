@@ -44,6 +44,7 @@
 
     body {
         margin: 0px;
+        overflow-x: hidden;
     }
 
 
@@ -153,7 +154,7 @@
         border-style: solid;
         border-color: #495057;
     }
-
+  
     .nav-item {
         display: inline-block;
         width: 120px;
@@ -161,10 +162,17 @@
         font-weight: bold;
         font-size: 23px;
         border-color: white;
-        left: 900px;
+        left: 800px;
         top: -90px;
         position: relative;
     }
+
+    #home  {
+        left: -850px;
+        position: relative;
+        color: lightcoral;
+    }
+
     </style>
 </head>
 
@@ -173,11 +181,14 @@
         <h2> sketches are coding websites that help with understanding gain practice with web design and animation. </h2>
         <div class="container">
             <ul class="nav">
+                <li class = "nav-item">  
+                 <a class="nav-link"  href="index.html" id="home"> Home </a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-info dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="sketches.html"> sketches</a>
-                        <a class="dropdown-item" href="dive.html"> dives</a>
+                        <a class="dropdown-item" href="dive.html"> dives </a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -255,6 +266,12 @@
                 <p> This image is inspired by the article, "Dressing for the Surveillance Age." It features a women with makeup and a shirt that disorients AI systems. </p>
             </div>
     </section>
+    <section id = "eleven"> 
+        <a href = "color_bubble/index.html">
+            <img src = "bubble.png" id ="tiny">
+            <div id = "box"> 
+                <h4> Color bubbles </h4>
+                <p> This website uses p5.js in order to make bubbles that shake. When clicked they turn a random color. </p>
 </body>
 
 </html>
