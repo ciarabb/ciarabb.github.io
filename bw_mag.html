@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"> </script> 
+
+    <script>
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+    background(0);
+  let pos = createVector(200,200);
+  let mouse = createVector(mouseX, mouseY);
+  
+  let v = p5.Vector.sub(mouse, pos);
+  let m = v.mag();
+  background(m);
+  console.log(m);
+  
+  translate(width/2, height/2);
+  stroke(m);
+  strokeWeight(2);
+  //stroke(255, 50);
+  line(0, 0,  v.x,  v.y);
+  
+}
+
+    </script>
+
+
+</body>
+</html>
