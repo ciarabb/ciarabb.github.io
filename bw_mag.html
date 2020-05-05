@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <style>
+    h1 {
+        position: absolute;
+        top: 400px;
+        left: 8px;
+        padding: 14px 34px;
+        border:none;
+        color:white;
+        background-color: #00ba8f;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+  </style>
 </head>
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"> </script> 
-
+    <h1> move the mouse on canvas above to change color</h1>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"> </script>
     <script>
+    function setup() {
+        createCanvas(400, 400);
+    }
 
-function setup() {
-  createCanvas(400, 400);
-}
+    function draw() {
+        background(0);
+        let pos = createVector(200, 200);
+        let mouse = createVector(mouseX, mouseY);
 
-function draw() {
-    background(0);
-  let pos = createVector(200,200);
-  let mouse = createVector(mouseX, mouseY);
-  
-  let v = p5.Vector.sub(mouse, pos);
-  let m = v.mag();
-  background(m);
-  console.log(m);
-  
-  translate(width/2, height/2);
-  stroke(m);
-  strokeWeight(2);
-  //stroke(255, 50);
-  line(0, 0,  v.x,  v.y);
-  
-}
+        let v = p5.Vector.sub(mouse, pos);
+        let m = v.mag();
+        background(m);
+        console.log(m);
 
+        translate(width / 2, height / 2);
+        stroke(m);
+        strokeWeight(2);
+        //stroke(255, 50);
+        line(0, 0, v.x, v.y);
+
+    }
     </script>
-
-
 </body>
+
 </html>
