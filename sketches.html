@@ -17,18 +17,18 @@
 
     h2 {
         color: gray;
-        font-size: 30px;
+        font-size: 2.5vw;
         position: relative;
         display: inline-block;
-        left: 40px;
-        height:100px;
-        width:800px;
-        top: 200px;
+        left: 5%;
+        height: 15%;
+        width: 60%;
+        top: 30vh;
     }
 
     h4 {
         color: #495057;
-        font-size: 22px;
+        font-size: 1.7vw;
     }
 
     h4:hover {
@@ -36,14 +36,19 @@
         text-decoration-color: rgb(37, 162, 183);
     }
 
+    h5 {
+        color: #495057;
+        font-size: 1.3vw;
+    }
+
     p {
         color: #495057;
-        font-size: 18px;
+        font-size: 1.4vw;
         width: 60%;
     }
 
     body {
-        margin: 0px;
+        margin: 0%;
         overflow-x: hidden;
     }
 
@@ -55,6 +60,54 @@
         background-color: white;
     }
 
+    .accordion {
+        color: #495057;
+        font-size: 1.4vw;
+        position: relative;
+        background-color: #ddd;
+        padding: 10px 18px;
+        border: none;
+        text-align: left;
+        width: 30%;
+        left: 5%;
+        top: 25vh;
+        transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: #bbb;
+    }
+
+    .accordion:after {
+        content: "\02795";
+        font-size: 1vw;
+        color: #777;
+        float: right;
+        margin-left: 1%;
+    }
+
+    .accordion:focus {
+        outline:none;
+
+    }
+
+    .active:after {
+        content: "\2796";
+    }
+
+    .panel {
+        position:relative;
+        padding: 10px 18px;
+        font-size: 1.3vw;
+        display: none;
+        overflow: hidden;
+        width: 30%;
+        left: 5%;
+        top: 25vh;
+        background-color: rgb(160, 220, 230);
+        outline:none;
+    }
 
     #one {
         background-color: white;
@@ -110,21 +163,13 @@
     #box {
         position: absolute;
         left: 60%;
-        top: 200px;
-        width: 600px;
-    }
-
-    #spaceimage {
-        position: relative;
-        left: 30%;
-        top: 80px;
-        width: 500px;
-        background-size: contain;
+        top: 30%;
+        width: 40%;
     }
 
     #rectangle {
-        width: 500px;
-        height: 250px;
+        width: 35%;
+        height: 30%;
         left: 10%;
         top: 25%;
         position: relative;
@@ -134,8 +179,8 @@
     }
 
     #square {
-        width: 400px;
-        height: 250px;
+        width: 30%;
+        height: 40%;
         position: relative;
         left: 10%;
         top: 25%;
@@ -145,8 +190,8 @@
     }
 
     #tiny {
-        width: 400px;
-        height: 320px;
+        width: 30%;
+        height: 44%;
         position: relative;
         left: 10%;
         top: 25%;
@@ -154,21 +199,22 @@
         border-style: solid;
         border-color: #495057;
     }
-  
+
     .nav-item {
         display: inline-block;
-        width: 120px;
-        height: 50px;
+        width: 10%;
+        height: 10%;
         font-weight: bold;
-        font-size: 23px;
+        font-size: 1.9vw;
         border-color: white;
-        left: 800px;
-        top: -90px;
+        left: 70%;
+        bottom: 14.5vh;
         position: relative;
     }
 
-    #home  {
-        left: -850px;
+
+    #home {
+        right: 700%;
         position: relative;
         color: lightcoral;
     }
@@ -178,11 +224,11 @@
 
 <body>
     <section id="one">
-        <h2> sketches are coding websites that allow me to gain practice with web design and animation. </h2>
+        <h2> sketches are miniature websites for practicing web design and animation. </h2>
         <div class="container">
             <ul class="nav">
-                <li class = "nav-item">  
-                 <a class="nav-link"  href="index.html" id="home"> Home </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="home"> Home </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-info dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
@@ -196,82 +242,113 @@
                 </li>
             </ul>
         </div>
+        <button class="accordion"> Menu </button>
+        <div class="panel">
+            <a href="#two"> <h5>Dancing boxes</h5></a>
+            <a href="#three"><h5>Postcard</h5></a>
+            <a href="#four"> <h5>Dolphin story</h5></a>
+            <a href="#five"> <h5> Space circle</h5></a>
+            <a href="#six"> <h5> Animal race</h5></a>
+            <a href="#seven"> <h5>Recipe book</h5></a>
+            <a href="#eight"> <h5>Musical albums</h5></a>
+            <a href="#nine"> <h5>Color bubble</h5></a>
+        </div>
     </section>
     <section id="two">
         <a href="clickbox.html"> <img src="box-click.png" id="square">
             <div id="box">
-                <h4> Dancing boxes</h4>
-        </a>
+        <h4> Dancing boxes</h4>
         <p>This is a website with 9 boxes that dance! I made this using key frame animation in css and javascript event listeners. </p>
-        </div>
+        </div>   </a>
     </section>
     <section id="three">
         <a href="postcard.html"> <img src="postcard.png" id="square">
             <div id="box">
-                <h4> Postcard </h4>
-        </a>
-        <p> This website takes you an a trip around the world! I made this using javascript arrays and event listeners.</p>
+        <h4> Postcard </h4>
+        <p> This website takes you an a trip around the world! I made this using javascript arrays and event listeners.</p> 
+        </div> </a>
     </section>
-    <section id="four">
+    <!-- <section id="four">
         <a href="xmasgift.html"> <img src="merryxmas.png" id="rectangle">
             <div id="box">
-                <h4> Winter holiday games</h4>
-        </a>
+        <h4> Holiday games</h4>
         <p> This website has holiday themed games I made using scratch. It also has a snowflake effect to get that winter atmosphere.</p>
-    </section>
-    <section id="five">
+    </div>  </a>
+    </section> -->
+    <section id="four">
         <a href="dolphin.html">
             <img src="dolphinpic.png" id="rectangle">
             <div id="box">
                 <h4> Dolphin story</h4>
                 <p> I made this website for a kindergarten class that was really interested in marine animals. I used photoshop pictures and made an interactive story with twine about the cool things dolphins do.</p>
+            </div></a>
     </section>
-    <section id="six">
+    <section id="five">
         <a href="spacecircles.html">
             <img src="spacecirclepic.png" id="rectangle">
             <div id="box">
                 <h4> Space know vs feel</h4>
                 <p> Space has been represented in fictional ways through comics so this website compares images of space from our logical vs imaginative side.</p>
-            </div>
+            </div></a>
     </section>
-    <section id="seven">
+    <section id="six">
         <a href="animal_race.html">
             <img src="animalrace.png" id="rectangle">
             <div id="box">
                 <h4> Animal race</h4>
                 <p> I made this website to visually display the speed of 4 different animals. I used their miles per hour to calculate their movement with pixels. </p>
-            </div>
+            </div></a>
     </section>
-    <section id="eight">
+    <section id="seven">
         <a href="recipebook.html">
             <img src="libroderecetas.png" id="square">
             <div id="box">
                 <h4> Recipe book</h4>
                 <p> Last summer my Iaia (grandma) and I cooked and baked together. This website contains some of my Iaia's recipes in a book format with pictures of the final product. </p>
-            </div>
+            </div></a>
     </section>
-    <section id="nine">
+    <section id="eight">
         <a href="musicalbums.html">
             <img src="musicalbum.png" id="tiny">
             <div id="box">
                 <h4> Music albums</h4>
                 <p> This website has animation that display album covers and it also has a button that changes the elements using jQuery. </p>
-            </div>
+            </div></a>
     </section>
-    <section id="ten">
+  <!--   <section id="ten">
         <a href="adversarialfashion.html">
             <img src="adversarial.png" id="tiny">
             <div id="box">
                 <h4> Adversarial fashion </h4>
                 <p> This image is inspired by the article, "Dressing for the Surveillance Age." It features a women with makeup and a shirt that disorients AI systems. </p>
-            </div>
-    </section>
-    <section id = "eleven"> 
-        <a href = "color_bubble/index.html">
-            <img src = "bubble.png" id ="tiny">
-            <div id = "box"> 
+            </div></a>
+    </section> -->
+    <section id="nine">
+        <a href="color_bubble/index.html">
+            <img src="bubble.png" id="tiny">
+            <div id="box">
                 <h4> Color bubbles </h4>
                 <p> This website uses p5.js in order to make bubbles that shake. When clicked they turn a random color. </p>
+            </div></a>
+    </section>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+     </script>
 </body>
 
 </html>

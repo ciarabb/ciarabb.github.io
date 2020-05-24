@@ -18,11 +18,10 @@
 
     h1 {
         color: #2f5ea8;
-        font-size: 45px;
-        font-size: 50px;
+        font-size: 4vw;
         position: relative;
-        top: 100px;
-        left: 460px;
+        top: 13vh;
+        left: 38%;
         display:inline-block;
     }
 
@@ -31,13 +30,15 @@
         position: relative;
         font-family: Fira mono, sans-serif;
         width: 80%;
-        left:10%;
+        left: 10%;
+        top:40vh;
         text-align: left;
     }
 
     body {
-        margin: 0px;
-         overflow-x: hidden;
+        margin: 0%;
+        overflow-x: hidden;
+          position: relative
 
     }
 
@@ -46,9 +47,10 @@
         position: relative;
         font-family: Fira mono, sans-serif;
         width: 80%;
-        left:10%;
+        left: 10%;
+        top:40vh;
         text-align: left;
-        font-size: 18px;
+        font-size: 1.5vw;
     }
 
     section {
@@ -72,18 +74,18 @@
   
     .nav-item {
         display: inline-block;
-        width: 120px;
-        height: 50px;
+        width: 10%;
+        height: 10%;
         font-weight: bold;
-        font-size: 23px;
+        font-size: 1.9vw;
         border-color: white;
-        left: 800px;
-        top: -50px;
+        left: 70%;
+        bottom: 9vh;
         position: relative;
     }
 
     #home  {
-        left: -850px;
+        right: 700%;
         position: relative;
         color: lightcoral;
     }
@@ -115,38 +117,48 @@
 
     </section>
     <section id="text">
-        <h2> May 5th </h2>
-        <p> I've been doing Chapter 2 of the Nature of Code. The usage of force requires a lot of math logic, but it's making sense so far. I made an object array in an enviornment with gravity and wind. It was inspired by Dan's second video in the series and is similar except that it's an array, the objects are given the position of the mouse and there is a random mass variable. I've been trying to find a way to make the wind force interactive with the x variable being tied to a numeric value, but I haven't been able to figure it out.</p>
+        <h2> May 24th</h2>
+        <p> These past few days, I've been delving deeper into oscillations looking beyond angular motion to real world applications such as a pendulum and a spring. Before that I've been exploring making <a href="trig_graph.html"> additive waves using sine and noise functions, </a> which makes a compelling visual animation. I've also made an array of <a href="array_oscillators.html"> oscillators in simple harmonic movement. </a> In addition I've learnt the equation of a simple pendulum movement. I've taken it a step foward with <a href="pendulum.html"> multiple pendulums that either have random or fixed lengths </a>, though due to the lack of interaction between bobs it is wholly inacurate. Friction between bobs is something I may add in the future. I've also made a <a href ="springer.html"> bouncing spring </a> sketch which I applied wind to. With these pass few sketches I liked seeing the intersection between forces and trigonometry concepts for oscillation.</p>
         <br>
-        <h2> May 2nd </h2>
-        <p>I finished Chapter 1 of the Nature of Code and watched the videos. It was about vectors and there was some math involved. There's a lot of new terms. I think I got a grasp on it, but I'm not sure. I made quite a few code sketches from riffing off of Dan's videos. I uploaded two: one that has a ball which goes in a random velocity each time it refreshes and another that uses the magnitude of the vector as the background color. I'm excited for next week when I will start reading Chapter 2 on Forces. </p>
+        <h2> May 16th</h2>
+        <p> This week I started <a href ="https://natureofcode.com/book/chapter-3-oscillation/" > Chapter 3 Oscillations </a> in the Nature of Code. I learnt about angular motion and applied it to some of my previous p5.js sketches. One is an <a href ="object_attract.html"> attractor with rotating squares </a> which previously just had bubbles. Another is <a href ="sqr_angular.html"> rotating squares in gravity and wind</a>, which uses the bubble array sketch framework, but wind is already applied and it includes angular motion. This chapter involves a lot of trigonometry which like physics I haven't had much exposure to yet. However, Dan's really good at defining the terms simply and keeping the integrity of physics/math simulations in a simplyfied manner.</p>
+        <br>
+        <h2> May 13th </h2>
+        <p> This week I built off what I learnt in Chapter 2. Specifically looking at attracting and repeling forces as well as the drag force which is liquid resistance. I made a code sketch using <a href="attract_repel_mover.html"> attracting and repeling forces </a> depending if key or mouse is clicked. I found that this has a cool visual effect and as part of the culminating ecosystem project, it could be used for flying animals such as bees. I also made an <a href="liquid_bubble.html">array of bubbles moving through a liquid which implements the drag force. </a> </p>
+        <br>
+        <h2> May 5th </h2>
+        <p> This week I've been doing <a href="https://natureofcode.com/book/chapter-2-forces/">Chapter 2 Forces</a> in the Nature of Code. Force requires a lot of math logic, but it's making sense so far. I made an <a href= "mass_array.html"> object array of bubbles </a> in an enviornment with gravity and wind. They are both just names for forces with pretty arbitrary values. Gravity is a force that pushes the object down and wind is one that pushes it to the left. In the future it would be fun to make them more acurate to real world physical equations, but for now I'm still applying concepts. In the sketch above, each object has a different mass so they interact with the enviornment differently. I've been trying to find a way to make the wind force interactive by making the x variable being tied to a numeric value, but I haven't been able to figure it out. That would make the wind force exert different amounts of power on the object. </p>
+        <br>
+        <h2> April 30th </h2>
+        <p>I finished <a href="https://natureofcode.com/book/chapter-1-vectors/">Chapter 1 Vectors</a> in the Nature of Code and watched the videos. There's a lot of new terms, but I think I got a grasp on it. Although I don't have previous exposure to physics concepts, it's really fascinating and I've done some more reading on it. I uploaded two small p5.js projects this week. <a href ="ball_vel.html"> Ball with random velocity </a>  has a button to refresh. I like the css format flexibility I have once I add the p5.js sketch to sublime.  <a href="bw_mag"> Greyscale magnitude <a> uses the magnitude of the vector as the background color. I got the idea, because I thought it would be visually interesting to apply the colors to a mouse position.  </p>
          <br>
         <h2> April 24th </h2>
-        <p> I've been watching series 6 and 7 in the "introduction to programming" with p5.js videos from Dan Shiffman. I've made several on the p5.js code sketch editor just from following these videos. The color clicking one I made as a spinoff of a video on mouse pressing. I thought it would be cool to visualize the clicks with colors, so I made three variables that each get a random number through 200-10 and then feed them through the class into the fill function with rgb. I'm getting the hang of p5.js and next week I'm going to read Nature of Code and follow Dan's videos on Vectors. </p>
+        <p> I've been watching series 6 and 7 in the <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA"> Introduction to programming with p5.js </a> videos from Dan Shiffman's coding train channel. I follow along by making some projects on the <a href="https://editor.p5js.org/momoney/sketches"> p5.js web code sketch editor </a>. The color clicking one I made as a spinoff of a video on his mouse pressing video. I thought it would be cool to visualize the clicks with colors, so I made three variables that each get a random number through 200-10 and then feed them through the class into the fill function with rgb. I'm getting the hang of p5.js and next week I'm going to read Nature of Code and follow Dan's videos! </p>
         <br>
         <h2> April 18th </h2>
+        <p> <b> <a href="https://hiphination.org/season-3-episodes/s3-episode-2-risky-business/"> Response to Hi-Phi Nation Stastical Evidence Podcast</a> </b></p>
         <p> <strong> Before: </strong> To a certain point I think actions are an important reflection on one's character and thus can predict their actions in the future. At the same time, people change themselves and their behavior over the course of their life for better or worse. I'm not sure if someone's actions should be predicted from statistics. I don't think it makes sense to judge one person based on what people from similar background to them did. I also think it gets into the tricky territory of prejudice against race, gender or ethnicity.</p>
         <p> <strong> After: </strong> From my answers above not much has changed about how I consider statistics or the past at predicting future actions, however I did learn more about the use of algorithms and risk assesments. I did know algorithms were being used to divide people into risk categories, but I didn't know the data points that went into it or that high risk people only had 8% chance of commiting a violent crime. I thought that the point made by Georgi Gardiner, a research fellow at Oxford University, encapsulates my thoughts on using statistical evidence. She recognizes that while indivizualized testimony is not totally reliable, the default is true. Also she regards that beyond bias people have an important advantage of stastical evidence, as cognitively and logically making sense of a story. Thus, I think that humans can be aided by statistical evidence, but that the algorithm should be monitored to check for unfair bias. Also I believe that a human judge should be the one making the ultimate desicion regardless of statistical data. </p>
         <br>
-        <h2> April 16th</h2>
-        <p> Today I did my first project with p5.js. I read the introduction to the Nature of Code, which discussed random walks and perlin noise. I made this animation inspired by a video of Dan Shiffman on flow chart made with perlin noise. The line of the flow chart each have a different directionality and an animation that makes these lines circles or triangles. It has the efffect of closing blinds, while at the same time having a 3D aspect due to the z-offset. </p>
-        <br>
+       <!--  <h2> April 16th</h2>
+        <p> Today I did my first project with p5.js! I read the introduction to the Nature of Code, which discussed random walks and perlin noise. I made this animation inspired by a video of Dan Shiffman on flow chart made with perlin noise. The line of the flow chart each have a different directionality and an animation that makes these lines circles or triangles. It has the efffect of closing blinds, while at the same time having a 3D aspect due to the z-offset. </p> -->
+     <!--    <br>
         <h2> April 12th </h2>
         <p> I made a drawing inspired by the New Yorker, "Dressing for the Surveillance Age" article. I focused on asymetrical makeup which was mentioned in the article. I thought about doing a clothing piece with several different faces or street images (like the ones Google shows for those "Are you a robot? quizzes). I didn't know how to draw that, so I decided to do a shirt that had irregular shapes. I enjoyed the article as it brought my attention to surveillence which is something I don't regularly consider. </p>
-        <br>
-        <h2> April 8th </h2>
+        <br> -->
+   <!--      <h2> April 8th </h2>
         <p> I've been working on my spring break code sketch on glitch with Minelle which has been fun. For this weekend, I'm going to start working with p5.js. I think I'll start exploring the code of projects with using it in order to get an idea of it's functionality. I think the independent project that I want to do is using p5.js to make generative art. </p>
         <br>
         <h2> April 3rd </h2>
         <p> <strong> What are some things you appreciate about this time? </strong> <br> I appreciate having more time with my family and doing activities with them like cooking, watching movies and playing board games. I've also used the extra time to read books for fun and to learn some new things. <br> <strong>What are some things that have been hard for you? </strong> <br> I've been pretty overwhelmed with news and the situation as a whole is constantly stressful. <br> <strong> What is one thing you miss about regular life? </strong> <br> I miss being able to see friends and classmates. I miss being able to go out often without having to wear a mask. I miss how New York normally is, it feels so odd without honking cars and crowded streets. <br> <strong> What is one thing you think you might miss once things go back to normal? </strong> <br> I'm definitely going to miss the later start to school. I think I'll also miss having more time to myself.</p>
-        <br>
+        <br> -->
         <h2> March 19th</h2>
-        <p> I started learning jQuery through Khan Academy and other websites. I made a music album website using animation element as well as using a button to change a page. It's definitely one of my favorite websites as the side step animation effect looks really cool as well as the album covers. I also started making a quiz, but it's been a bit difficult to figure out using jQuery. I think the library is very helpful. I also started learning bootstrap as an extension of CSS and I've been remodeling my portfolio with it!</p>
+        <p> I started learning jQuery through Khan Academy and other websites. I made a <a href="musicalbums.html"> music album </a> sketch using animation elements as well as using a button to change a page. It's definitely one of my favorite websites as the side step animation effect looks really cool as well as the album covers. I think the library is very helpful for animation as it bypasses a lot of the steps used in javascript. I also started learning bootstrap as an extension of CSS and I've been remodeling my portfolio with it! I've also started to make it more web interactive. </p>
         <br>
         <h2> March 7th</h2>
-        <p> I fixed the animal race website and made the animals speeds or pixels per 1/5 of a second correspond to their miles per hour. Algorithm: x=mph 60/x * 60 /5000 (mile width in px) /5 (px per 200 milliseconds). I can add more animals and I also think it would be interesting to explore the average movement of each animal throughout a prolonged period. </p>
+        <p> I fixed the <a href="animal_race.html">animal race </a> sketch and made the animals speeds or pixels per 1/5 of a second correspond to their miles per hour. Algorithm: x=mph 60/x * 60 /5000 (px width per mile) /5 (px per 200 milliseconds). I can add more animals and I also think it would be interesting to explore the average movement of each animal throughout a prolonged period. In addition, I want to add a timer so that the movement of the animals in space and time is apparent to the user. I really liked applying math to this project. I think that a larger website like this would be a good educational tool for younger students.</p>
         <br>
-        <h2> February 27th</h2>
+        <!-- <h2> February 27th</h2>
         <p> I made an animal race website based on the car race, as part of the object assignment. I gave my animals different speeds based on their mph. I think it would be interesting to put mile markers, but I'm not sure how I'd go about that. My background repeats, so perhaps I could use that as a metric for distance. </p>
         <br>
         <h2> February 23rd</h2>
@@ -189,7 +201,7 @@
         <p> I created my portfolio and I created my coding journal. I was inspired by the website "cyclemon.com" for my portfolio because I really liked the flow and the layout. For the coding journal I was inspired by computer terminals in the early days of computer science. </p>
         <br>
         <h2> September 19th </h2>
-        <p> This month, I created my click box program as my first website. With this program, I learned how to make things with css, html and a bit of javascript. Originally the boxes were animated by hovering over them, but because the animations would cause them to move from there area, some of the boxes just kept glitching. So I added javascript for the keyframe animations to start once the boxes were clicked. I did this with event listeners. </p>
+        <p> This month, I created my click box program as my first website. With this program, I learned how to make things with css, html and a bit of javascript. Originally the boxes were animated by hovering over them, but because the animations would cause them to move from there area, some of the boxes just kept glitching. So I added javascript for the keyframe animations to start once the boxes were clicked. I did this with event listeners. </p> -->
     </section>
 </body>
 

@@ -13,44 +13,46 @@
 
     a:link {
         text-decoration: none;
+        text-decoration-color:none;
     }
 
     h2 {
         color: gray;
-        font-size: 30px;
+        font-size: 2.5vw;
         position: relative;
         display: inline-block;
-        left: 40px;
-        height:100px;
-        width:800px;
-        top: 240px;
+        left: 5%;
+        height: 15%;
+        width: 60%;
+        top: 30vh;
     }
 
     h3 {
-        font-size: 50px;
+        font-size: 4vw;
         position: relative;
         display: inline-block;
-        left: 50px;
-        top: 10px;
+        left: 5%;
+        top: 1vh;
     }
 
     h4 {
         color: #495057;
-        font-size: 22px;
+        font-size: 1.5vw;
         position:relative;
-        top:100px;
-        left:-350px;
+        
+    }
+    h4:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(37, 162, 183);
     }
 
-
     p {
-        color: #495057;
-        font-size: 18px;
-        width: 60%;
+        margin:13vh;
+        width:80%;
     }
 
     body {
-        margin: 0px;
+        margin: 0%;
         overflow-x: hidden;
 
     }
@@ -63,15 +65,10 @@
         background-color: white;
     }
 
-
-    #space {
-        width:100%;
-        height:200px;
-        
-    }
+    
 
     #pink {
-        color: rgb(210,34,97);
+        color: rgb(220,50,120);
     }
 
 
@@ -82,24 +79,40 @@
 
     #two {
         top: 100%;
+        height:200%;
     }
 
     .nav-item {
-        display: inline-block;
-        width: 120px;
-        height: 50px;
-        font-weight: bold;
-        font-size: 23px;
-        border-color: white;
-        left: 800px;
-        top: -90px;
         position: relative;
+        display: inline-block;
+        width: 10%;
+        height: 10%;
+        font-weight: bold;
+        font-size: 1.9vw;
+        border-color: white;
+        left: 70%;
+        bottom: 14.5vh;
     }
 
     #home  {
-        left: -850px;
+        right: 700%;
         position: relative;
         color: lightcoral;
+    }
+
+     #swivle {
+        position:relative;
+        top: 45vh;
+        height:10%;
+        width:100%;
+    }
+
+    #list {
+        position:relative;
+        color: #495057;
+        top: 7vh;
+        left: 7%;
+
     }
 
     </style>
@@ -107,7 +120,7 @@
 
 <body>
     <section id="one">
-        <h2> deep dives are areas of study, posted here are sketches to practice new skills and also culminating projects. </h2>
+        <h2> deep dives are areas of study, posted here are related projects. </h2>
         <div class="container">
             <ul class="nav">
                 <li class = "nav-item">  
@@ -125,14 +138,24 @@
                 </li>
             </ul>
         </div>
+        <img id="swivle" src="swivle.png">
     </section>
     <section id="two">
-        <h3 id="pink"> The Nature of Code <h3>
-        <div id="space"> </div>
-<!--         <a href="perlin_trip.html"> <h4> Perlin noise flowchart </h4> </a>
- -->        <a href="ball_vel.html"> <h4> Random velocity bubble </h4> </a>
-        <a href="bw_mag.html"> <h4> Greyscale magnitude </h4> </a>
-        <a href="mass_array.html"> <h4> Array of bubbles in gravity and wind</h4> </a>
+        <div id="noc"> 
+        <h3 id="pink"> The Nature of Code </h3>
+        <p> Mid-April to currently: The Nature of Code deep dive consists of reading the <a href ="https://natureofcode.com/book/introduction/"> book by Daniel Shiffman </a> and watching his videos on the <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZV4yEcW3uDwOgGXKUUsPOM"> Coding Train channel </a>. It focuses on modeling natural simulations using physics and mathematical concepts. The Nature of Code makes visually engaging simulations by using the language processing or it's popular library p5.js. As I read and watch I make p5.js sketches on the <a href="https://editor.p5js.org/momoney/sketches"> web editor </a> applying the concepts covered. Below are some of my favorite sketches and once I finish a culminating ecosystem project will be added. See my <a href ="journal.html"> journal </a> for more information on the sketches and my process! </p>
+        <h4> <a id = "list" href="ball_vel.html">  Random velocity bubble  </a></h4> <br> 
+        <h4> <a id = "list" href="bw_mag.html">Greyscale magnitude </a></h4> <br> 
+        <h4> <a id = "list" href="mass_array.html"> Bubbles in gravity and wind</a></h4> <br> 
+        <h4> <a id ="list" href="liquid_bubble.html"> Bubbles with drag force/fluid resistance </a> </h4><br> 
+        <h4> <a id ="list" href="attract_repel_mover.html"> Mover with attractors and repels </a> </h4> <br> 
+        <h4> <a id ="list" href ="object_attract.html"> Attraction on different objects  </a> </h4> <br> 
+        <h4> <a id = "list" href="sqr_angular.html"> Squares with angular motion</a></h4> <br> 
+        <h4> <a id = "list" href="trig_graph.html"> Additive graph of sine and noise</a></h4> <br> 
+        <h4> <a id = "list" href="array_oscillators.html"> Oscillator in core structure </a></h4> <br> 
+        <h4> <a id = "list" href="pendulum.html"> Pendulums with different lengths </a></h4> <br> 
+        <h4> <a id = "list" href="springer.html"> Bouncing spring with gravity and wind </a></h4> <br> 
+    </div>
     </section>
 </body>
 
