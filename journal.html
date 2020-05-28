@@ -8,100 +8,184 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
     <style>
-    @media (max-device-width: 667px) {}
+    @media (max-device-width: 667px) {
 
-    a:link {
-        text-decoration: none;
+
+        a:link {
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #2f5ea8;
+            font-size: 5vw;
+            position: relative;
+            display: inline-block;
+            left: 32vw;
+            top: 15vh;
+        }
+
+        h2 {
+            color: black;
+            position: relative;
+            font-family: Fira mono, sans-serif;
+            width: 80vw;
+            left: 10vw;
+            top: 40vh;
+            text-align: left;
+        }
+
+        body {
+            margin: 0vw;
+            overflow-x: hidden;
+            position: relative
+        }
+
+        p {
+            color: black;
+            position: relative;
+            font-family: Fira mono, sans-serif;
+            width: 80vw;
+            left: 10vw;
+            top: 40vh;
+            text-align: left;
+            font-size: 2.4vw;
+        }
+
+        section {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        #header {
+            background-color: white;
+            top: 0%;
+        }
+
+        #text {
+            background-color: white;
+            top: 50%;
+        }
+
+        #greyheader {
+            color: #495057;
+        }
+
+        .nav-item {
+            display: inline-block;
+            width: 18vw;
+            height: 10vh;
+            font-weight: bold;
+            font-size: 3.5vw;
+            border-color: white;
+            left: 35vw;
+            bottom: 3vh;
+            position: relative;
+        }
+
+
+        #home {
+            right: 35vw;
+            position: relative;
+            color: lightcoral;
+        }
+
     }
 
-    h1 {
-        color: #2f5ea8;
-        font-size: 4vw;
-        position: relative;
-        top: 13vh;
-        left: 38%;
-        display:inline-block;
-    }
+    @media (min-device-width: 667px) {
 
-    h2 {
-        color: black;
-        position: relative;
-        font-family: Fira mono, sans-serif;
-        width: 80vw;
-        left: 10vw;
-        top:40vh;
-        text-align: left;
-    }
+        a:link {
+            text-decoration: none;
+        }
 
-    body {
-        margin: 0vw;
-        overflow-x: hidden;
-          position: relative
+        h1 {
+            color: #2f5ea8;
+            font-size: 4vw;
+            position: relative;
+            top: 13vh;
+            left: 38vw;
+            display: inline-block;
+        }
+
+        h2 {
+            color: black;
+            position: relative;
+            font-family: Fira mono, sans-serif;
+            width: 80vw;
+            left: 10vw;
+            top: 40vh;
+            text-align: left;
+        }
+
+        body {
+            margin: 0vw;
+            overflow-x: hidden;
+            position: relative
+        }
+
+        p {
+            color: black;
+            position: relative;
+            font-family: Fira mono, sans-serif;
+            width: 80vw;
+            left: 10vw;
+            top: 40vh;
+            text-align: left;
+            font-size: 1.5vw;
+        }
+
+        section {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        #header {
+            background-color: white;
+            top: 0%;
+        }
+
+        #text {
+            background-color: white;
+            top: 50%;
+        }
+
+        #greyheader {
+            color: #495057;
+        }
+
+        .nav-item {
+            display: inline-block;
+            width: 15vw;
+            height: 10vh;
+            font-weight: bold;
+            font-size: 2.2vw;
+            border-color: white;
+            left: 50vw;
+            bottom: 9vh;
+            position: relative;
+        }
+
+
+        #home {
+            right: 52vw;
+            position: relative;
+            color: lightcoral;
+        }
 
     }
-
-    p {
-        color: black;
-        position: relative;
-        font-family: Fira mono, sans-serif;
-        width: 80vw;
-        left: 10vw;
-        top:40vh;
-        text-align: left;
-        font-size: 1.5vw;
-    }
-
-    section {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-
-    #header {
-        background-color: white;
-        top: 0%;
-    }
-
-    #text {
-        background-color: white;
-        top: 50%;
-    }
-    #greyheader {
-        color: #495057;
-    }
-  
-     .nav-item {
-        display: inline-block;
-        width: 10vw;
-        height: 10vh;
-        font-weight: bold;
-        font-size: 1.9vw;
-        border-color: white;
-        left: 60vw;
-        bottom: 9vh;
-        position: relative;
-    }
-
-
-    #home {
-        right: 60vw;
-        position: relative;
-        color: lightcoral;
-    }
-
     </style>
 </head>
 
 <body>
     <section id="header">
-        <h1> coding </h1> <h1 id="greyheader">   journal </h1>
-
-       <div class="container">
+        <h1> coding </h1>
+        <h1 id="greyheader"> journal </h1>
+        <div class="container">
             <ul class="nav">
-                <li class = "nav-item">  
-                 <a class="nav-link"  href="index.html" id="home"> Home </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="home"> Home </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-info dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
@@ -118,20 +202,20 @@
     </section>
     <section id="text">
         <h2> May 24th</h2>
-        <p> These past few days, I've been delving deeper into oscillations looking beyond angular motion to real world applications such as a pendulum and a spring. Before that I've been exploring making <a href="trig_graph.html"> additive waves using sine and noise functions, </a> which makes a compelling visual animation. I've also made an array of <a href="array_oscillators.html"> oscillators in simple harmonic movement. </a> In addition I've learnt the equation of a simple pendulum movement. I've taken it a step foward with <a href="pendulum.html"> multiple pendulums that either have random or fixed lengths </a>, though due to the lack of interaction between bobs it is wholly inacurate. Friction between bobs is something I may add in the future. I've also made a <a href ="springer.html"> bouncing spring </a> sketch which I applied wind to. With these pass few sketches I liked seeing the intersection between forces and trigonometry concepts for oscillation.</p>
+        <p> These past few days, I've been delving deeper into oscillations looking beyond angular motion to real world applications such as a pendulum and a spring. Before that I've been exploring making <a href="trig_graph.html"> additive waves using sine and noise functions, </a> which makes a compelling visual animation. I've also made an array of <a href="array_oscillators.html"> oscillators in simple harmonic movement. </a> In addition I've learnt the equation of a simple pendulum movement. I've taken it a step foward with <a href="pendulum.html"> multiple pendulums that either have random or fixed lengths </a>, though due to the lack of interaction between bobs it is wholly inacurate. Friction between bobs is something I may add in the future. I've also made a <a href="springer.html"> bouncing spring </a> sketch which I applied wind to. With these pass few sketches I liked seeing the intersection between forces and trigonometry concepts for oscillation.</p>
         <br>
         <h2> May 16th</h2>
-        <p> This week I started <a href ="https://natureofcode.com/book/chapter-3-oscillation/" > Chapter 3 Oscillations </a> in the Nature of Code. I learnt about angular motion and applied it to some of my previous p5.js sketches. One is an <a href ="object_attract.html"> attractor with rotating squares </a> which previously just had bubbles. Another is <a href ="sqr_angular.html"> rotating squares in gravity and wind</a>, which uses the bubble array sketch framework, but wind is already applied and it includes angular motion. This chapter involves a lot of trigonometry which like physics I haven't had much exposure to yet. However, Dan's really good at defining the terms simply and keeping the integrity of physics/math simulations in a simplyfied manner.</p>
+        <p> This week I started <a href="https://natureofcode.com/book/chapter-3-oscillation/"> Chapter 3 Oscillations </a> in the Nature of Code. I learnt about angular motion and applied it to some of my previous p5.js sketches. One is an <a href="object_attract.html"> attractor with rotating squares </a> which previously just had bubbles. Another is <a href="sqr_angular.html"> rotating squares in gravity and wind</a>, which uses the bubble array sketch framework, but wind is already applied and it includes angular motion. This chapter involves a lot of trigonometry which like physics I haven't had much exposure to yet. However, Dan's really good at defining the terms simply and keeping the integrity of physics/math simulations in a simplyfied manner.</p>
         <br>
         <h2> May 13th </h2>
         <p> This week I built off what I learnt in Chapter 2. Specifically looking at attracting and repeling forces as well as the drag force which is liquid resistance. I made a code sketch using <a href="attract_repel_mover.html"> attracting and repeling forces </a> depending if key or mouse is clicked. I found that this has a cool visual effect and as part of the culminating ecosystem project, it could be used for flying animals such as bees. I also made an <a href="liquid_bubble.html">array of bubbles moving through a liquid which implements the drag force. </a> </p>
         <br>
         <h2> May 5th </h2>
-        <p> This week I've been doing <a href="https://natureofcode.com/book/chapter-2-forces/">Chapter 2 Forces</a> in the Nature of Code. Force requires a lot of math logic, but it's making sense so far. I made an <a href= "mass_array.html"> object array of bubbles </a> in an enviornment with gravity and wind. They are both just names for forces with pretty arbitrary values. Gravity is a force that pushes the object down and wind is one that pushes it to the left. In the future it would be fun to make them more acurate to real world physical equations, but for now I'm still applying concepts. In the sketch above, each object has a different mass so they interact with the enviornment differently. I've been trying to find a way to make the wind force interactive by making the x variable being tied to a numeric value, but I haven't been able to figure it out. That would make the wind force exert different amounts of power on the object. </p>
+        <p> This week I've been doing <a href="https://natureofcode.com/book/chapter-2-forces/">Chapter 2 Forces</a> in the Nature of Code. Force requires a lot of math logic, but it's making sense so far. I made an <a href="mass_array.html"> object array of bubbles </a> in an enviornment with gravity and wind. They are both just names for forces with pretty arbitrary values. Gravity is a force that pushes the object down and wind is one that pushes it to the left. In the future it would be fun to make them more acurate to real world physical equations, but for now I'm still applying concepts. In the sketch above, each object has a different mass so they interact with the enviornment differently. I've been trying to find a way to make the wind force interactive by making the x variable being tied to a numeric value, but I haven't been able to figure it out. That would make the wind force exert different amounts of power on the object. </p>
         <br>
         <h2> April 30th </h2>
-        <p>I finished <a href="https://natureofcode.com/book/chapter-1-vectors/">Chapter 1 Vectors</a> in the Nature of Code and watched the videos. There's a lot of new terms, but I think I got a grasp on it. Although I don't have previous exposure to physics concepts, it's really fascinating and I've done some more reading on it. I uploaded two small p5.js projects this week. <a href ="ball_vel.html"> Ball with random velocity </a>  has a button to refresh. I like the css format flexibility I have once I add the p5.js sketch to sublime.  <a href="bw_mag"> Greyscale magnitude <a> uses the magnitude of the vector as the background color. I got the idea, because I thought it would be visually interesting to apply the colors to a mouse position.  </p>
-         <br>
+        <p>I finished <a href="https://natureofcode.com/book/chapter-1-vectors/">Chapter 1 Vectors</a> in the Nature of Code and watched the videos. There's a lot of new terms, but I think I got a grasp on it. Although I don't have previous exposure to physics concepts, it's really fascinating and I've done some more reading on it. I uploaded two small p5.js projects this week. <a href="ball_vel.html"> Ball with random velocity </a> has a button to refresh. I like the css format flexibility I have once I add the p5.js sketch to sublime. <a href="bw_mag"> Greyscale magnitude <a> uses the magnitude of the vector as the background color. I got the idea, because I thought it would be visually interesting to apply the colors to a mouse position. </p>
+        <br>
         <h2> April 24th </h2>
         <p> I've been watching series 6 and 7 in the <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA"> Introduction to programming with p5.js </a> videos from Dan Shiffman's coding train channel. I follow along by making some projects on the <a href="https://editor.p5js.org/momoney/sketches"> p5.js web code sketch editor </a>. The color clicking one I made as a spinoff of a video on his mouse pressing video. I thought it would be cool to visualize the clicks with colors, so I made three variables that each get a random number through 200-10 and then feed them through the class into the fill function with rgb. I'm getting the hang of p5.js and next week I'm going to read Nature of Code and follow Dan's videos! </p>
         <br>
@@ -140,13 +224,13 @@
         <p> <strong> Before: </strong> To a certain point I think actions are an important reflection on one's character and thus can predict their actions in the future. At the same time, people change themselves and their behavior over the course of their life for better or worse. I'm not sure if someone's actions should be predicted from statistics. I don't think it makes sense to judge one person based on what people from similar background to them did. I also think it gets into the tricky territory of prejudice against race, gender or ethnicity.</p>
         <p> <strong> After: </strong> From my answers above not much has changed about how I consider statistics or the past at predicting future actions, however I did learn more about the use of algorithms and risk assesments. I did know algorithms were being used to divide people into risk categories, but I didn't know the data points that went into it or that high risk people only had 8% chance of commiting a violent crime. I thought that the point made by Georgi Gardiner, a research fellow at Oxford University, encapsulates my thoughts on using statistical evidence. She recognizes that while indivizualized testimony is not totally reliable, the default is true. Also she regards that beyond bias people have an important advantage of stastical evidence, as cognitively and logically making sense of a story. Thus, I think that humans can be aided by statistical evidence, but that the algorithm should be monitored to check for unfair bias. Also I believe that a human judge should be the one making the ultimate desicion regardless of statistical data. </p>
         <br>
-       <!--  <h2> April 16th</h2>
+        <!--  <h2> April 16th</h2>
         <p> Today I did my first project with p5.js! I read the introduction to the Nature of Code, which discussed random walks and perlin noise. I made this animation inspired by a video of Dan Shiffman on flow chart made with perlin noise. The line of the flow chart each have a different directionality and an animation that makes these lines circles or triangles. It has the efffect of closing blinds, while at the same time having a 3D aspect due to the z-offset. </p> -->
-     <!--    <br>
+        <!--    <br>
         <h2> April 12th </h2>
         <p> I made a drawing inspired by the New Yorker, "Dressing for the Surveillance Age" article. I focused on asymetrical makeup which was mentioned in the article. I thought about doing a clothing piece with several different faces or street images (like the ones Google shows for those "Are you a robot? quizzes). I didn't know how to draw that, so I decided to do a shirt that had irregular shapes. I enjoyed the article as it brought my attention to surveillence which is something I don't regularly consider. </p>
         <br> -->
-   <!--      <h2> April 8th </h2>
+        <!--      <h2> April 8th </h2>
         <p> I've been working on my spring break code sketch on glitch with Minelle which has been fun. For this weekend, I'm going to start working with p5.js. I think I'll start exploring the code of projects with using it in order to get an idea of it's functionality. I think the independent project that I want to do is using p5.js to make generative art. </p>
         <br>
         <h2> April 3rd </h2>
@@ -185,7 +269,7 @@
         <h2> November 20th</h2>
         <p> I made my javascript website by using a variable that dislays an image of a mango on top of a box. Then I called the variable to appear with the variable i that goes up to 100.   </p>
         <br>
-    	<h2> November 12th</h2>
+        <h2> November 12th</h2>
         <p> I finished my code for the fizz buzz program in scratch. I used variable in order to count and used the mod block to determine if the numbers are multiples of 3 and/or 5. </p>
         <br>
         <h2> November 7th</h2>

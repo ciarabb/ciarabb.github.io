@@ -9,114 +9,230 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <style>
-    @media (max-device-width: 667px) {}
+    @media (max-device-width: 667px) {
+        a:link {
+            text-decoration: none;
+            text-decoration-color: none;
+        }
 
-    a:link {
-        text-decoration: none;
-        text-decoration-color:none;
+        h2 {
+            color: gray;
+            font-size: 3.6vw;
+            position: relative;
+            display: inline-block;
+            left: 5vw;
+            height: 15vh;
+            width: 60vw;
+            top: 30vh;
+        }
+
+        h3 {
+            font-size: 5vw;
+            position: relative;
+            display: inline-block;
+            left: 5vw;
+            top: 1vh;
+        }
+
+        h4 {
+            color: #495057;
+            font-size: 2.8vw;
+            position: relative;
+            left: -2vw;
+        }
+
+        h4:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(37, 162, 183);
+        }
+
+        p {
+            margin: 5vw;
+            width: 90vw;
+            font-size: 2.4vw;
+        }
+
+        body {
+            margin: 0vw;
+            overflow-x: hidden;
+
+        }
+
+
+        section {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: white;
+        }
+
+
+
+        #pink {
+            color: rgb(220, 50, 120);
+        }
+
+
+        #one {
+            background-color: white;
+            top: 0%;
+        }
+
+        #two {
+            top: 100%;
+            height: 200%;
+        }
+
+
+
+        #swivle {
+            position: relative;
+            top: 45vh;
+            height: 10%;
+            width: 100%;
+        }
+
+        #list {
+            position: relative;
+            color: #495057;
+            top: 7vh;
+            left: 7%;
+
+        }
+
+        .nav-item {
+            display: inline-block;
+            width: 18vw;
+            height: 10vh;
+            font-weight: bold;
+            font-size: 3.5vw;
+            border-color: white;
+            left: 35vw;
+            bottom: 15vh;
+            position: relative;
+        }
+
+
+        #home {
+            right: 35vw;
+            position: relative;
+            color: lightcoral;
+        }
     }
 
-    h2 {
-        color: gray;
-        font-size: 2.5vw;
-        position: relative;
-        display: inline-block;
-        left: 5%;
-        height: 15%;
-        width: 60%;
-        top: 30vh;
+
+    @media (min-device-width: 667px) {
+        a:link {
+            text-decoration: none;
+            text-decoration-color: none;
+        }
+
+        h2 {
+            color: gray;
+            font-size: 2.5vw;
+            position: relative;
+            display: inline-block;
+            left: 5vw;
+            height: 15vh;
+            width: 60vw;
+            top: 30vh;
+        }
+
+        h3 {
+            font-size: 4vw;
+            position: relative;
+            display: inline-block;
+            left: 5vw;
+            top: 1vh;
+        }
+
+        h4 {
+            color: #495057;
+            font-size: 1.5vw;
+            position: relative;
+            left: -2vw;
+        }
+
+        h4:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(37, 162, 183);
+        }
+
+        p {
+            left: 5vw;
+            margin: 10vh;
+            width: 90vw;
+            font-size: 1.3vw;
+        }
+
+        body {
+            margin: 0vw;
+            overflow-x: hidden;
+
+        }
+
+
+        section {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: white;
+        }
+
+
+
+        #pink {
+            color: rgb(220, 50, 120);
+        }
+
+
+        #one {
+            background-color: white;
+            top: 0%;
+        }
+
+        #two {
+            top: 100%;
+            height: 200%;
+        }
+
+
+
+        #swivle {
+            position: relative;
+            top: 45vh;
+            height: 10%;
+            width: 100%;
+        }
+
+        #list {
+            position: relative;
+            color: #495057;
+            top: 7vh;
+            left: 7%;
+
+        }
+
+         .nav-item {
+            display: inline-block;
+            width: 15vw;
+            height: 10vh;
+            font-weight: bold;
+            font-size: 2.2vw;
+            border-color: white;
+            left: 50vw;
+            bottom: 15vh;
+            position: relative;
+        }
+
+
+        #home {
+            right: 52vw;
+            position: relative;
+            color: lightcoral;
+        }
+
     }
-
-    h3 {
-        font-size: 4vw;
-        position: relative;
-        display: inline-block;
-        left: 5%;
-        top: 1vh;
-    }
-
-    h4 {
-        color: #495057;
-        font-size: 1.5vw;
-        position:relative;
-        
-    }
-    h4:hover {
-        text-decoration: underline;
-        text-decoration-color: rgb(37, 162, 183);
-    }
-
-    p {
-        margin:10vh;
-        width:80%;
-    }
-
-    body {
-        margin: 0%;
-        overflow-x: hidden;
-
-    }
-
-
-    section {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: white;
-    }
-
-    
-
-    #pink {
-        color: rgb(220,50,120);
-    }
-
-
-    #one {
-        background-color: white;
-        top: 0%;
-    }
-
-    #two {
-        top: 100%;
-        height:200%;
-    }
-
-
-
-     #swivle {
-        position:relative;
-        top: 45vh;
-        height:10%;
-        width:100%;
-    }
-
-    #list {
-        position:relative;
-        color: #495057;
-        top: 7vh;
-        left: 7%;
-
-    }
-    .nav-item {
-        display: inline-block;
-        width: 10vw;
-        height: 10vh;
-        font-weight: bold;
-        font-size: 1.9vw;
-        border-color: white;
-        left: 60vw;
-        bottom: 14.5vh;
-        position: relative;
-    }
-
-
-    #home {
-        right: 60vw;
-        position: relative;
-        color: lightcoral;
-    }
-
     </style>
 </head>
 
@@ -125,8 +241,8 @@
         <h2> deep dives are areas of study, posted here are related projects. </h2>
         <div class="container">
             <ul class="nav">
-                <li class = "nav-item">  
-                 <a class="nav-link"  href="index.html" id="home"> Home </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="home"> Home </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-info dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
@@ -143,21 +259,21 @@
         <img id="swivle" src="swivle.png">
     </section>
     <section id="two">
-        <div id="noc"> 
-        <h3 id="pink"> The Nature of Code </h3>
-        <p> Mid-April to currently: The Nature of Code deep dive consists of reading the <a href ="https://natureofcode.com/book/introduction/"> book by Daniel Shiffman </a> and watching his videos on the <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZV4yEcW3uDwOgGXKUUsPOM"> Coding Train channel </a>. It focuses on modeling natural simulations using physics and mathematical concepts. The Nature of Code makes visually engaging simulations by using the language processing or it's popular library p5.js. As I read and watch I make p5.js sketches on the <a href="https://editor.p5js.org/momoney/sketches"> web editor </a> applying the concepts covered. Below are some of my favorite sketches and once I finish a culminating ecosystem project will be added. See my <a href ="journal.html"> journal </a> for more information on the sketches and my process! </p>
-        <h4> <a id = "list" href="ball_vel.html">  Random velocity bubble  </a></h4> <br> 
-        <h4> <a id = "list" href="bw_mag.html">Greyscale magnitude </a></h4> <br> 
-        <h4> <a id = "list" href="mass_array.html"> Bubbles in gravity and wind</a></h4> <br> 
-        <h4> <a id ="list" href="liquid_bubble.html"> Bubbles with drag force/fluid resistance </a> </h4><br> 
-        <h4> <a id ="list" href="attract_repel_mover.html"> Mover with attractors and repels </a> </h4> <br> 
-        <h4> <a id ="list" href ="object_attract.html"> Attraction on different objects  </a> </h4> <br> 
-        <h4> <a id = "list" href="sqr_angular.html"> Squares with angular motion</a></h4> <br> 
-        <h4> <a id = "list" href="trig_graph.html"> Additive graph of sine and noise</a></h4> <br> 
-        <h4> <a id = "list" href="array_oscillators.html"> Oscillator in core structure </a></h4> <br> 
-        <h4> <a id = "list" href="pendulum.html"> Pendulums with different lengths </a></h4> <br> 
-        <h4> <a id = "list" href="springer.html"> Bouncing spring with gravity and wind </a></h4> <br> 
-    </div>
+        <div id="noc">
+            <h3 id="pink"> The Nature of Code </h3>
+            <p> Mid-April to currently: The Nature of Code deep dive consists of reading the <a href="https://natureofcode.com/book/introduction/"> book by Daniel Shiffman </a> and watching his videos on the <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZV4yEcW3uDwOgGXKUUsPOM"> Coding Train channel </a>. It focuses on modeling natural simulations using physics and mathematical concepts. The Nature of Code makes visually engaging simulations by using the language processing or it's popular library p5.js. As I read and watch I make p5.js sketches on the <a href="https://editor.p5js.org/momoney/sketches"> web editor </a> applying the concepts covered. Below are some of my favorite sketches and once I finish a culminating ecosystem project will be added. See my <a href="journal.html"> journal </a> for more information on the sketches and my process! </p>
+            <h4> <a id="list" href="ball_vel.html"> Random velocity bubble </a></h4> <br>
+            <h4> <a id="list" href="bw_mag.html">Greyscale magnitude </a></h4> <br>
+            <h4> <a id="list" href="mass_array.html"> Bubbles in gravity and wind</a></h4> <br>
+            <h4> <a id="list" href="liquid_bubble.html"> Bubbles with drag force or fluid resistance </a> </h4><br>
+            <h4> <a id="list" href="attract_repel_mover.html"> Mover with attractors and repels </a> </h4> <br>
+            <h4> <a id="list" href="object_attract.html"> Attraction on different objects </a> </h4> <br>
+            <h4> <a id="list" href="sqr_angular.html"> Squares with angular motion</a></h4> <br>
+            <h4> <a id="list" href="trig_graph.html"> Additive graph of sine and noise</a></h4> <br>
+            <h4> <a id="list" href="array_oscillators.html"> Oscillators in core structure </a></h4> <br>
+            <h4> <a id="list" href="pendulum.html"> Pendulums with different lengths </a></h4> <br>
+            <h4> <a id="list" href="springer.html"> Bouncing spring with gravity and wind </a></h4> <br>
+        </div>
     </section>
 </body>
 

@@ -9,217 +9,435 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <style>
-    @media (max-device-width: 667px) {}
+    @media (max-device-width: 667px) {
+        .nav-item {
+            display: inline-block;
+            width: 18vw;
+            height: 10vh;
+            font-weight: bold;
+            font-size: 3.5vw;
+            border-color: white;
+            left: 35vw;
+            bottom: 15vh;
+            position: relative;
+        }
 
-    a:link {
-        text-decoration: none;
+
+        #home {
+            right: 35vw;
+            position: relative;
+            color: lightcoral;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+
+
+        body {
+            margin: 0vw;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            color: gray;
+            font-size: 3.6vw;
+            position: relative;
+            display: inline-block;
+            left: 10vw;
+            height: 15vh;
+            width: 60vw;
+            top: 30vh;
+        }
+
+        h4 {
+            color: #495057;
+            font-size: 2.8vw;
+        }
+
+        h4:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(37, 162, 183);
+        }
+
+        h5 {
+            color: #495057;
+            font-size: 2.4vw;
+        }
+
+        p {
+            color: #495057;
+            font-size: 2.4vw;
+            width: 30vw;
+        }
+
+        #rectangle {
+            width: 40vw;
+            height: 16vh;
+            left: 10vw;
+            top: 25vh;
+            position: relative;
+            border: 1px;
+            border-style: solid;
+            border-color: #495057;
+        }
+
+        #square {
+            width: 40vw;
+            height: 20vh;
+            position: relative;
+            left: 10vw;
+            top: 25vh;
+            border: 1px;
+            border-style: solid;
+            border-color: #495057;
+        }
+
+        #tiny {
+            width: 40vw;
+            height: 20vh;
+            position: relative;
+            left: 10vw;
+            top: 25vh;
+            border: 1px;
+            border-style: solid;
+            border-color: #495057;
+        }
+
+        #box {
+            position: relative;
+            left: 60vw;
+            top: 9vh;
+            height: 10vh;
+            width: 30vw;
+        }
+
+        
+        section {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        background-color: white;
     }
 
-    h2 {
-        color: gray;
-        font-size: 2.5vw;
-        position: relative;
-        display: inline-block;
-        left: 5vw;
-        height: 15vh;
-        width: 60vw;
-        top: 30vh;
+        #one {
+            background-color: white;
+            top: 0%;
+        }
+
+        #two {
+            top: 100%;
+        }
+
+        #three {
+
+            top: 150%;
+        }
+
+        #four {
+            top: 200%;
+        }
+
+        #five {
+            top: 250%;
+        }
+
+        #six {
+            top: 300%;
+        }
+
+        #seven {
+            top: 350%;
+        }
+
+        #eight {
+            top: 400%;
+        }
+
+        #nine {
+            top: 450%;
+        }
+
+        #ten {
+            top: 500%;
+        }
+
+        #eleven {
+            top: 550%;
+        }
+
+        #twelve {
+            top: 600%;
+        }
+
+
+        .accordion {
+            color: #495057;
+            font-size: 2.4vw;
+            position: relative;
+            background-color: #ddd;
+            padding: 10px 18px;
+            border: none;
+            text-align: left;
+            width: 30vw;
+            left: 5vw;
+            top: 25vh;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #bbb;
+        }
+
+        .accordion:after {
+            content: "\02795";
+            font-size: 1vw;
+            color: #777;
+            float: right;
+            margin-left: 1vw;
+        }
+
+        .accordion:focus {
+            outline: none;
+
+        }
+
+        .active:after {
+            content: "\2796";
+        }
+
+        .panel {
+            position: relative;
+            padding: 10px 18px;
+            font-size: 1.3vw;
+            display: none;
+            overflow: hidden;
+            width: 30vw;
+            left: 5vw;
+            top: 25vh;
+            background-color: rgb(160, 220, 230);
+            outline: none;
+        }
     }
 
-    h4 {
-        color: #495057;
-        font-size: 1.7vw;
-    }
+       
+    @media (min-device-width: 667px) {
 
-    h4:hover {
-        text-decoration: underline;
-        text-decoration-color: rgb(37, 162, 183);
-    }
-
-    h5 {
-        color: #495057;
-        font-size: 1.3vw;
-    }
-
-    p {
-        color: #495057;
-        font-size: 1.4vw;
-        width: 30vw;
-    }
-
-    body {
-        margin: 0vw;
-        overflow-x: hidden;
-    }
+        a:link {
+            text-decoration: none;
+        }
 
 
-    section {
+
+        body {
+            margin: 0vw;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            color: gray;
+            font-size: 2.5vw;
+            position: relative;
+            display: inline-block;
+            left: 7vw;
+            height: 15vh;
+            width: 60vw;
+            top: 30vh;
+        }
+
+        h4 {
+            color: #495057;
+            font-size: 1.7vw;
+        }
+
+        h4:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(37, 162, 183);
+        }
+
+        h5 {
+            color: #495057;
+            font-size: 1.3vw;
+        }
+
+        p {
+            color: #495057;
+            font-size: 1.4vw;
+            width: 30vw;
+        }
+          section {
         width: 100%;
         height: 100%;
         position: absolute;
         background-color: white;
     }
 
-    .accordion {
-        color: #495057;
-        font-size: 1.4vw;
-        position: relative;
-        background-color: #ddd;
-        padding: 10px 18px;
-        border: none;
-        text-align: left;
-        width: 30vw;
-        left: 5vw;
-        top: 25vh;
-        transition: 0.4s;
+        #one {
+            background-color: white;
+            top: 0%;
+        }
+
+        #two {
+            top: 100%;
+        }
+
+        #three {
+
+            top: 200%;
+        }
+
+        #four {
+            top: 300%;
+        }
+
+        #five {
+            top: 400%;
+        }
+
+        #six {
+            top: 500%;
+        }
+
+        #seven {
+            top: 600%;
+        }
+
+        #eight {
+            top: 700%;
+        }
+
+        #nine {
+            top: 800%;
+        }
+
+        #ten {
+            top: 900%;
+        }
+
+        #eleven {
+            top: 1000%;
+        }
+
+        #twelve {
+            top: 1100%;
+        }
+
+
+        #rectangle {
+            width: 35vw;
+            height: 35vh;
+            left: 10vw;
+            top: 25vh;
+            position: relative;
+            border: 1px;
+            border-style: solid;
+            border-color: #495057;
+        }
+
+        #square {
+            width: 30vw;
+            height: 40vh;
+            position: relative;
+            left: 10vw;
+            top: 25vh;
+            border: 1px;
+            border-style: solid;
+            border-color: #495057;
+        }
+
+        #tiny {
+            width: 30vw;
+            height: 44vh;
+            position: relative;
+            left: 10vw;
+            top: 25vh;
+            border: 1px;
+            border-style: solid;
+            border-color: #495057;
+        }
+
+        #box {
+            position: absolute;
+            left: 60vw;
+            top: 27vh;
+            height: 10vh;
+            width: 30vw;
+        }
+
+
+        .accordion {
+            color: #495057;
+            font-size: 1.5vw;
+            position: relative;
+            background-color: #ddd;
+            padding: 10px 18px;
+            border: none;
+            text-align: left;
+            width: 30vw;
+            left: 7vw;
+            top: 25vh;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #bbb;
+        }
+
+        .accordion:after {
+            content: "\02795";
+            font-size: 1vw;
+            color: #777;
+            float: right;
+            margin-left: 1vw;
+        }
+
+        .accordion:focus {
+            outline: none;
+
+        }
+
+        .active:after {
+            content: "\2796";
+        }
+
+        .panel {
+            position: relative;
+            padding: 10px 18px;
+            font-size: 1.3vw;
+            display: none;
+            overflow: hidden;
+            width: 30vw;
+            left: 7vw;
+            top: 25vh;
+            background-color: rgb(160, 220, 230);
+            outline: none;
+        }
+
+
+        .nav-item {
+            display: inline-block;
+            width: 15vw;
+            height: 10vh;
+            font-weight: bold;
+            font-size: 2.2vw;
+            border-color: white;
+            left: 50vw;
+            bottom: 15vh;
+            position: relative;
+        }
+
+
+        #home {
+            right: 52vw;
+            position: relative;
+            color: lightcoral;
+        }
+
+
     }
-
-    .active,
-    .accordion:hover {
-        background-color: #bbb;
-    }
-
-    .accordion:after {
-        content: "\02795";
-        font-size: 1vw;
-        color: #777;
-        float: right;
-        margin-left: 1vw;
-    }
-
-    .accordion:focus {
-        outline:none;
-
-    }
-
-    .active:after {
-        content: "\2796";
-    }
-
-    .panel {
-        position:relative;
-        padding: 10px 18px;
-        font-size: 1.3vw;
-        display: none;
-        overflow: hidden;
-        width: 30vw;
-        left: 5vw;
-        top: 25vh;
-        background-color: rgb(160, 220, 230);
-        outline:none;
-    }
-
-    #one {
-        background-color: white;
-        top: 0%;
-    }
-
-    #two {
-        top: 100%;
-    }
-
-    #three {
-
-        top: 200%;
-    }
-
-    #four {
-        top: 300%;
-    }
-
-    #five {
-        top: 400%;
-    }
-
-    #six {
-        top: 500%;
-    }
-
-    #seven {
-        top: 600%;
-    }
-
-    #eight {
-        top: 700%;
-    }
-
-    #nine {
-        top: 800%;
-    }
-
-    #ten {
-        top: 900%;
-    }
-
-    #eleven {
-        top: 1000%;
-    }
-
-    #twelve {
-        top: 1100%;
-    }
-
-
-    #box {
-        position: absolute;
-        left: 60vw;
-        top: 27vh;
-        height:10vh;
-        width: 30vw;
-    }
-
-    #rectangle {
-        width: 35vw;
-        height: 35vh;
-        left: 10vw;
-        top: 25vh;
-        position: relative;
-        border: 1px;
-        border-style: solid;
-        border-color: #495057;
-    }
-
-    #square {
-        width: 30vw;
-        height: 40vh;
-        position: relative;
-        left: 10vw;
-        top: 25vh;
-        border: 1px;
-        border-style: solid;
-        border-color: #495057;
-    }
-
-    #tiny {
-        width: 30vw;
-        height: 44vh;
-        position: relative;
-        left: 10vw;
-        top: 25vh;
-        border: 1px;
-        border-style: solid;
-        border-color: #495057;
-    }
-
-    .nav-item {
-        display: inline-block;
-        width: 10vw;
-        height: 10vh;
-        font-weight: bold;
-        font-size: 1.9vw;
-        border-color: white;
-        left: 60vw;
-        bottom: 14.5vh;
-        position: relative;
-    }
-
-
-    #home {
-        right: 60vw;
-        position: relative;
-        color: lightcoral;
-    }
-
     </style>
 </head>
 
@@ -245,29 +463,47 @@
         </div>
         <button class="accordion"> Menu </button>
         <div class="panel">
-            <a href="#two"> <h5>Dancing boxes</h5></a>
-            <a href="#three"><h5>Postcard</h5></a>
-            <a href="#four"> <h5>Dolphin story</h5></a>
-            <a href="#five"> <h5> Space circle</h5></a>
-            <a href="#six"> <h5> Animal race</h5></a>
-            <a href="#seven"> <h5>Recipe book</h5></a>
-            <a href="#eight"> <h5>Musical albums</h5></a>
-            <a href="#nine"> <h5>Color bubble</h5></a>
+            <a href="#two">
+                <h5>Dancing boxes</h5>
+            </a>
+            <a href="#three">
+                <h5>Postcard</h5>
+            </a>
+            <a href="#four">
+                <h5>Dolphin story</h5>
+            </a>
+            <a href="#five">
+                <h5> Space circle</h5>
+            </a>
+            <a href="#six">
+                <h5> Animal race</h5>
+            </a>
+            <a href="#seven">
+                <h5>Recipe book</h5>
+            </a>
+            <a href="#eight">
+                <h5>Musical albums</h5>
+            </a>
+            <a href="#nine">
+                <h5>Color bubble</h5>
+            </a>
         </div>
     </section>
     <section id="two">
         <a href="clickbox.html"> <img src="box-click.png" id="square">
             <div id="box">
-        <h4> Dancing boxes</h4>
-        <p>This is a website with 9 boxes that dance! I made this using key frame animation in css and javascript event listeners. </p>
-        </div>   </a>
+                <h4> Dancing boxes</h4>
+                <p>This is a website with 9 boxes that dance! I made this using key frame animation in css and javascript event listeners. </p>
+            </div>
+        </a>
     </section>
     <section id="three">
         <a href="postcard.html"> <img src="postcard.png" id="square">
             <div id="box">
-        <h4> Postcard </h4>
-        <p> This website takes you an a trip around the world! I made this using javascript arrays and event listeners.</p> 
-        </div> </a>
+                <h4> Postcard </h4>
+                <p> This website takes you an a trip around the world! I made this using javascript arrays and event listeners.</p>
+            </div>
+        </a>
     </section>
     <!-- <section id="four">
         <a href="xmasgift.html"> <img src="merryxmas.png" id="rectangle">
@@ -282,7 +518,8 @@
             <div id="box">
                 <h4> Dolphin story</h4>
                 <p> I made this website for a kindergarten class that was really interested in marine animals. I used photoshop pictures and made an interactive story with twine about the cool things dolphins do.</p>
-            </div></a>
+            </div>
+        </a>
     </section>
     <section id="five">
         <a href="spacecircles.html">
@@ -290,7 +527,8 @@
             <div id="box">
                 <h4> Space know vs feel</h4>
                 <p> Space has been represented in fictional ways through comics so this website compares images of space from our logical vs imaginative side.</p>
-            </div></a>
+            </div>
+        </a>
     </section>
     <section id="six">
         <a href="animal_race.html">
@@ -298,7 +536,8 @@
             <div id="box">
                 <h4> Animal race</h4>
                 <p> I made this website to visually display the speed of 4 different animals. I used their miles per hour to calculate their movement with pixels. </p>
-            </div></a>
+            </div>
+        </a>
     </section>
     <section id="seven">
         <a href="recipebook.html">
@@ -306,7 +545,8 @@
             <div id="box">
                 <h4> Recipe book</h4>
                 <p> Last summer my Iaia (grandma) and I cooked and baked together. This website contains some of my Iaia's recipes in a book format with pictures of the final product. </p>
-            </div></a>
+            </div>
+        </a>
     </section>
     <section id="eight">
         <a href="musicalbums.html">
@@ -314,9 +554,10 @@
             <div id="box">
                 <h4> Music albums</h4>
                 <p> This website has animation that display album covers and it also has a button that changes the elements using jQuery. </p>
-            </div></a>
+            </div>
+        </a>
     </section>
-  <!--   <section id="ten">
+    <!--   <section id="ten">
         <a href="adversarialfashion.html">
             <img src="adversarial.png" id="tiny">
             <div id="box">
@@ -330,26 +571,25 @@
             <div id="box">
                 <h4> Color bubbles </h4>
                 <p> This website uses p5.js in order to make bubbles that shake. When clicked they turn a random color. </p>
-            </div></a>
+            </div>
+        </a>
     </section>
     <script>
-        var acc = document.getElementsByClassName("accordion");
-var i;
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
     }
-  });
-}
-
-
-     </script>
+    </script>
 </body>
 
 </html>
