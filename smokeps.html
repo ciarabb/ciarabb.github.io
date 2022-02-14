@@ -14,16 +14,54 @@
 		display: inline-block;
         font-size: 16px;
     }
-
-		
-
 	</style>
 </head>
 <body>
-	
-<iframe style="width: 640px; height: 360px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/momoney/embed/GsHmJOcdV"></iframe>
-	<h1> move mouse horizontaly to change direction of smoke</h1>
+<h1> move mouse horizontaly to change direction of smoke</h1>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+<script> 
+let particleSystem;
+let img;
 
+function preload () {
+  img = loadImage("data/texture-1.png");
+}
+
+function setup() {
+createCanvas(400, 400, WEBGL);
+ps = new ParticleSystem(0, createVector(0, 75), img);
+}
+
+function draw() {
+  var gl = this._renderer.GL;
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+  
+  background(0);
+  
+
+  let dx = map(mouseX, 0, width, -0.3, 0.2);
+  let wind = createVector(dx, 0);
+  ps.applyForce(wind);
+  ps.run();
+  for (let i = 0; i < 2; i++) {
+    ps.addParticle();
+  }
+  drawVector(wind, createVector(0, -50, 0), 500);
+
+}
+
+function drawVector(v, pos, scayl) { 
+  push(); 
+  translate(pos.x,pos.y);
+  stroke(255);
+  rotate(v.heading());
+  let len = v.mag() * scayl;
+  line(0, 0, len, 0);
+  pop();
+  
+}
+</script>
 
 </body>
 </html>
